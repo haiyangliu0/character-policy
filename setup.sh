@@ -18,4 +18,4 @@ pip install --upgrade pip==24.0
 pip install -r ./pre-requirements.txt
 pip install -r ./requirements.txt
 git lfs install
-git clone https://huggingface.co/H-Liu1997/emage_evaltools
+git clone https://huggingface.co/haiyangliu0/emage_evaltools
