@@ -1,10 +1,12 @@
 <div align="center">
-<h1>character-policy<br>Generating Face and Body Animation from Speech</h1>
-<code>character-policy</code> is an Open-Source and research project to generate 3D body and face animation from speech.
-It works as an API inputs speech audio and outputs body and face motion parameters.
-You may transfer these motion parameters to other formats such as Iphone ARKit Blendshape Weights or Vicon Skeleton bvh files.
-<br><br>
-For custom speaker style capture or commercial collaboration: <a href="mailto:haiyangliu1997@gmail.com">haiyangliu1997@gmail.com</a>
+<h1>character-policy<br>multimodal interactive 3D character policy</h1>
+<code>character-policy</code> is an open-source research project for multimodal interactive 3D character policies:
+<br>
+(1) generating face and body animation from speech &nbsp;·&nbsp; (2) generating body animation from text
+<br>
+It works as an API that takes speech, text, trajectory, or scene inputs and outputs standard 3D motion parameters
+<br>
+such as SMPL, transferable to iPhone ARKit Blendshape weights, Vicon Skeleton BVH files, or game engines.
 </div>
 
 <br>
@@ -16,6 +18,19 @@ For custom speaker style capture or commercial collaboration: <a href="mailto:ha
 </div>
 
 <br>
+
+## News
+
+- [2026.09] Released **[World2Motion](https://fyantu.github.io/World2Motion/)** for scene-aware 3D motion generation.
+- [2026.09] Released **[Triangular Resampling](https://arxiv.org/abs/2609.34697)** for long-horizon streaming motion generation.
+- [2026.09] Released **[FloodDiffusion 2](https://alayalab.github.io/FloodDiffusion2/)** for path-controllable streaming motion generation.
+- [2026.09] Released **[GestureFAR](https://arxiv.org/abs/2609.21576)** for streaming co-speech gesture generation.
+- [2026.09] **[Intentional-Gesture](https://andypinxinliu.github.io/Intentional-Gesture/)** accepted to NeurIPS 2026.
+- [2026.05] Released **[PersonaGesture](https://arxiv.org/pdf/2605.06064v1)** for single-reference speaker style personalization.
+- [2026.02] **[FloodDiffusion](https://shandaai.github.io/FloodDiffusion/)** accepted to CVPR 2026 (Highlight).
+- [2025.07] **[GestureLSM](https://andypinxinliu.github.io/GestureLSM/)** accepted to ICCV 2025.
+
+---
 
 ## 1. Demo
 
@@ -53,13 +68,15 @@ For custom speaker style capture or commercial collaboration: <a href="mailto:ha
 
 ---
 
-## 2. Models & BEAT2 Benchmark
+## 2. Models, Weights & Benchmarks
+
+### 2.1 Generating Face and Body Animation from Speech (BEAT2)
 
 All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated on BEAT2 (Speaker 2 `Scott`).
 
-### Models from `character-policy` Team
+#### Models from `character-policy` Team
 
-| Model | Venue | Similarity (FGD ↓) | Audio Alignment (BC ↑) | Diversity (L1Div ↑) | Inputs | Outputs | Links |
+| Model | Venue | Similarity<br>(FGD ↓) | Audio Alignment<br>(BC ↑) | Diversity<br>(Div →) | Inputs | Outputs | Links |
 |-------|-------|--------------------|------------------------|---------------------|--------|---------|-------|
 | **Real Data** | — | — | 0.703 | 11.97 | — | Full Body + Face | [BEAT2 Dataset](https://huggingface.co/datasets/haiyangliu0/BEAT2) |
 | **DisCo** (Haiyang Liu et al.) | ACM MM 2022 | 0.942 | 0.643 | 9.91 | Audio | Upper + Hands | [Weights](https://huggingface.co/haiyangliu0/disco_audio/tree/main) · [Paper](https://dl.acm.org/doi/abs/10.1145/3503161.3548400) |
@@ -68,12 +85,12 @@ All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated o
 | **GestureLSM** (Pinxin Liu et al.) | ICCV 2025 | 0.409 | 0.714 | 13.24 | Audio + Text | Full Body + Face | [Code](https://github.com/andypinxinliu/GestureLSM) · [Paper](https://arxiv.org/abs/2501.18898) |
 | **Intentional-Gesture** (Pinxin Liu et al.) | NeurIPS 2026 | 0.379 | 0.690 | 11.00 | Audio + Text | Full Body + Face | [Code](https://github.com/andypinxinliu/Intentional-Gesture) · [Paper](https://arxiv.org/abs/2505.15197) |
 | **PersonaGesture** (Xiangyue Zhang et al.) | ArXiv 2026 | 0.393 | 0.710 | 13.25 | Audio + Ref Clip | Full Body + Face | [Paper](https://arxiv.org/pdf/2605.06064v1) |
-| **GestureFAR** (Pinxin Liu et al.) | ArXiv 2026 | **0.308** | **0.741** | **13.24** | Streaming Audio | Full Body + Face | [Code](https://github.com/andypinxinliu/GestureFAR) · [Paper](https://arxiv.org/abs/2609.21576) |
+| **GestureFAR** (Pinxin Liu et al.) | ArXiv 2026 | 0.308 | 0.741 | 13.24 | Streaming Audio | Full Body + Face | [Code](https://github.com/andypinxinliu/GestureFAR) · [Paper](https://arxiv.org/abs/2609.21576) |
 
-### Models from Community*
+#### Models from Community*
 *\*Agent-summarized models reported on BEAT2 (Speaker 2); may contain inaccuracies, issues or PRs for corrections and new entries are welcome.*
 
-| Model | Venue | Similarity (FGD ↓) | Audio Alignment (BC ↑) | Diversity (L1Div ↑) | Links |
+| Model | Venue | Similarity<br>(FGD ↓) | Audio Alignment<br>(BC ↑) | Diversity<br>(Div →) | Links |
 |-------|-------|--------------------|------------------------|---------------------|-------|
 | **LivelySpeaker** (Yihao Zhi et al.) | ICCV 2023 | 1.180 | 0.666 | 11.28 | [Code](https://github.com/zyhbili/LivelySpeaker) · [Paper](https://arxiv.org/abs/2309.09294) |
 | **DiffSHEG** (Junming Chen et al.) | CVPR 2024 | 0.714 | 0.743 | 8.21 | [Code](https://github.com/JeremyCJM/DiffSHEG) · [Paper](https://arxiv.org/abs/2401.04747) |
@@ -86,17 +103,68 @@ All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated o
 | **MIBURI** (Mahmoud H. Mughal et al.) | CVPR 2026 | 0.806 | 0.790 | 17.50 | [Code](https://github.com/m-hamza-mughal/miburi) · [Paper](https://arxiv.org/abs/2603.03282) |
 | **LiveGesture** (Muhammad H. Saleem et al.) | CVPR 2026 | 0.457 | 0.794 | 13.91 | [Paper](https://arxiv.org/abs/2604.10927) |
 
-### Datasets, Blender Add-on & Evaluation Tools
+### 2.2 Generating Body Animation from Text (HumanML3D)
 
-| Category | Resource 1 | Resource 2 | Resource 3 |
-|----------|------------|------------|------------|
-| **Datasets** | [BEAT2 (SMPL-X + FLAME)](https://huggingface.co/datasets/haiyangliu0/BEAT2) | [BEAT (BVH + ARKit)](https://huggingface.co/datasets/haiyangliu0/BEAT) | [Rendered Skeleton Videos](https://huggingface.co/datasets/haiyangliu0/BEAT_Rendered_Videos) |
-| **Blender Tools** | [Blender Addon](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/smplx_blender_addon_20230921.zip) | [Character on BEAT](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/BEAT_Avatars.zip) | [Blender Render Scripts](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/rendervideo.zip) |
-| **SMPL-X & Eval** | [SMPLX-FLAME Model](https://huggingface.co/haiyangliu0/emage_evaltools/blob/main/smplx_models/smplx/SMPLX_NEUTRAL_2020.npz) | [FGD on BEAT2](https://huggingface.co/haiyangliu0/emage_evaltools/blob/main/AESKConv_240_100.bin) | [ARKit2FLAME Tools](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/ARkit_FLAME.zip) |
+All outputs are 3D body motion parameters evaluated on HumanML3D.
+
+#### Models from `character-policy` Team
+
+| Model | Venue | Similarity<br>(FID ↓) | Text Alignment<br>(R@3 ↑) | Diversity<br>(Div →) | Inputs | Outputs | Links |
+|-------|-------|--------------------|------------------------|-------------------|--------|---------|-------|
+| **Real Motion** | — | — | 0.797 | 9.50 | — | Full Body | [HumanML3D](https://github.com/EricGuo5513/HumanML3D) |
+| **FloodDiffusion** (Yiyi Cai et al.) | CVPR 2026 | 0.057 | 0.810 | 9.58 | Streaming Text | Full Body | [Code](https://github.com/ShandaAI/FloodDiffusion) · [Paper](https://arxiv.org/abs/2512.03520) |
+| **FloodDiffusion 2** (Yiyi Cai et al.) | ArXiv 2026 | 0.050 | 0.816 | 9.31 | Streaming Text + Path | Full Body + Trajectory | [Code](https://github.com/caiyy17/FloodDiffusion2) · [Paper](https://arxiv.org/abs/2609.33167) |
+| **Triangular Resampling** (Kunhang Li et al.) | ArXiv 2026 | — | — | — | Streaming Text | Full Body | [Paper](https://arxiv.org/abs/2609.34697) |
+| **World2Motion** (Fangyuan Tu et al.) | ArXiv 2026 | — | — | — | Image + Text | Full Body + Video | [Project](https://fyantu.github.io/World2Motion/) · [Paper](https://arxiv.org/abs/2609.37004) |
+
+#### Models from Community*
+*\*Agent-summarized models reported on HumanML3D; may contain inaccuracies, issues or PRs for corrections and new entries are welcome.*
+
+| Model | Venue | Similarity<br>(FID ↓) | Text Alignment<br>(R@3 ↑) | Diversity<br>(Div →) | Links |
+|-------|-------|--------------------|------------------------|-------------------|-------|
+| **MDM** (Guy Tevet et al.) | ICLR 2023 | 0.544 | 0.611 | 9.56 | [Code](https://github.com/GuyTevet/motion-diffusion-model) · [Paper](https://arxiv.org/abs/2209.14916) |
+| **MLD** (Xin Chen et al.) | CVPR 2023 | 0.473 | 0.772 | 9.72 | [Code](https://github.com/ChenFengYe/motion-latent-diffusion) · [Paper](https://arxiv.org/abs/2212.04048) |
+| **T2M-GPT** (Jianrong Zhang et al.) | CVPR 2023 | 0.141 | 0.775 | 9.72 | [Code](https://github.com/Mael-zys/T2M-GPT) · [Paper](https://arxiv.org/abs/2301.06052) |
+| **ReMoDiffuse** (Mingyuan Zhang et al.) | ICCV 2023 | 0.103 | 0.795 | 9.02 | [Code](https://github.com/mingyuan-zhang/ReMoDiffuse) · [Paper](https://arxiv.org/abs/2304.01116) |
+| **FineMoGen** (Mingyuan Zhang et al.) | NeurIPS 2023 | 0.151 | 0.784 | 9.26 | [Code](https://github.com/mingyuan-zhang/FineMoGen) · [Paper](https://arxiv.org/abs/2312.15004) |
+| **OmniControl** (Yiming Xie et al.) | ICLR 2024 | 0.100 | 0.804 | 9.69 | [Code](https://github.com/neu-vi/OmniControl) · [Paper](https://arxiv.org/abs/2310.08580) |
+| **MMM** (Ekkasit Pinyoanuntapong et al.) | CVPR 2024 | 0.089 | 0.804 | 9.41 | [Code](https://github.com/exitudio/MMM) · [Paper](https://arxiv.org/abs/2312.03596) |
+| **MoMask** (Chuan Guo et al.) | CVPR 2024 | 0.045 | 0.807 | 9.68 | [Code](https://github.com/EricGuo5513/momask-codes) · [Paper](https://arxiv.org/abs/2312.00063) |
+| **Motion Mamba** (Zeyu Zhang et al.) | ECCV 2024 | 0.281 | 0.792 | 9.87 | [Code](https://github.com/steve-zeyu-zhang/MotionMamba) · [Paper](https://arxiv.org/abs/2403.07487) |
+| **ParCo** (Qiran Zou et al.) | ECCV 2024 | 0.109 | 0.795 | 9.57 | [Code](https://github.com/qrzou/ParCo) · [Paper](https://arxiv.org/abs/2403.18512) |
+| **MotionLCM** (Wenxun Dai et al.) | ECCV 2024 | 0.304 | 0.798 | 9.61 | [Code](https://github.com/Dai-Wenxun/MotionLCM) · [Paper](https://arxiv.org/abs/2404.19759) |
+| **BAMM** (Ekkasit Pinyoanuntapong et al.) | ECCV 2024 | 0.055 | 0.814 | 9.72 | [Code](https://github.com/exitudio/BAMM) · [Paper](https://arxiv.org/abs/2403.19435) |
+| **MoGenTS** (Weihao Yuan et al.) | NeurIPS 2024 | 0.033 | 0.812 | 9.57 | [Code](https://github.com/weihaoyuan/MoGenTS) · [Paper](https://arxiv.org/abs/2409.17686) |
+| **DART** (Kaifeng Zhao et al.) | ICLR 2025 | 0.854 | 0.722 | 9.50 | [Code](https://github.com/zkf1997/DART) · [Paper](https://arxiv.org/abs/2410.05260) |
+| **MARDM** (Zichong Meng et al.) | CVPR 2025 | 0.114 | 0.795 | 9.66 | [Code](https://github.com/neu-vi/MARDM) · [Paper](https://arxiv.org/abs/2411.16543) |
+| **SALAD** (Seokhyeon Hong et al.) | CVPR 2025 | 0.076 | 0.857 | 9.70 | [Code](https://github.com/seokhyeonhong/salad) · [Paper](https://arxiv.org/abs/2503.13836) |
+| **PRIMAL** (Yan Zhang et al.) | ICCV 2025 | 0.511 | 0.780 | 9.52 | [Code](https://github.com/zycliao/PRIMAL) · [Paper](https://arxiv.org/abs/2503.21899) |
+| **MotionStreamer** (Lixing Xiao et al.) | ICCV 2025 | 0.092 | 0.802 | 9.72 | [Code](https://github.com/zju3dv/MotionStreamer) · [Paper](https://arxiv.org/abs/2503.15451) |
+| **MoMask++** (Chuan Guo et al.) | NeurIPS 2025 | 0.072 | 0.811 | 9.56 | [Code](https://github.com/Snap-Research/SnapMoGen) · [Paper](https://arxiv.org/abs/2507.09122) |
+| **Event-T2M** (Seong-Eun Hong et al.) | ICLR 2026 | 0.056 | 0.842 | 9.61 | [Project](https://tjswodud.github.io/EventT2M/) · [Paper](https://arxiv.org/abs/2602.04292) |
+| **CMDM** (Qing Yu et al.) | CVPR 2026 | 0.068 | 0.860 | 9.44 | [Code](https://github.com/YU1ut/CMDM) · [Paper](https://arxiv.org/abs/2602.22594) |
+| **MotionHiFlow** (Heng Li et al.) | CVPR 2026 | 0.032 | 0.843 | 9.50 | [Paper](https://arxiv.org/abs/2604.23264) |
+| **ScaleMoGen** (Inwoo Hwang et al.) | ECCV 2026 | 0.030 | 0.856 | 9.54 | [Project](https://inwoohwang.me/ScaleMoGen) · [Paper](https://arxiv.org/abs/2605.11704) |
+| **BiMoGen** (Wanjiang Weng et al.) | NeurIPS 2026 | 0.047 | 0.818 | 9.42 | [Paper](https://arxiv.org/abs/2609.35407) |
 
 ---
 
-## 3. Input / Output Schema
+## 3. Data & Tools
+
+#### Data & Tools from `character-policy` Team
+
+| Resource | Description | Links |
+|----------|-------------|-------|
+| **BEAT2** | 76h co‑speech 3D body, hand & face dataset (30 speakers, SMPL‑X + FLAME) | [HuggingFace](https://huggingface.co/datasets/haiyangliu0/BEAT2) |
+| **BEAT** | 76h co‑speech 3D body, hand & face dataset (30 speakers, BVH + ARKit) | [HuggingFace](https://huggingface.co/datasets/haiyangliu0/BEAT) |
+| **EMAGE Eval Tools** | BEAT2 evaluation (FGD / BC / Div) & neutral SMPL‑X model | [HuggingFace](https://huggingface.co/haiyangliu0/emage_evaltools) |
+| **ARKit2FLAME** | Convert between FLAME (100‑D) and iPhone ARKit (52‑D) blendshapes | [Download](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/ARkit_FLAME.zip) |
+| **Blender SMPL‑X Add‑on** | Import and animate SMPL‑X + FLAME `.npz` files in Blender | [Download](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/smplx_blender_addon_20230921.zip) |
+| **BEAT Avatars & Renderer** | Rigged 3D character avatars and batch video rendering scripts | [Avatars](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/BEAT_Avatars.zip) · [Scripts](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/rendervideo.zip) |
+
+---
+
+## 4. For Agents Using This Repo
 
 * **Input**: `.wav` mono speech audio (resampled automatically to `16,000 Hz`).
 * **Output**: `.npz` dictionary at `30 FPS` (`T = int(audio_seconds * 30)`), saved via `emage_utils.motion_io.beat_format_save`:
@@ -109,12 +177,6 @@ All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated o
 | `betas` | `(300,)` `float32` | SMPL-X shape parameters |
 | `mocap_frame_rate` | `30` | Frame rate (`30` FPS) |
 | `gender` / `model` | `"neutral"` / `"smplx2020"` | Mesh topology identifiers |
-
----
-
-## 4. Environment, Inference, Evaluation & Training (Agent Execution Spec)
-
-### 4.1 Environment Setup (`uv`)
 
 ```bash
 git clone https://github.com/haiyangliu0/character-policy.git
@@ -129,64 +191,20 @@ uv pip install smplx==0.1.28 trimesh pyrender pyopengl imageio moviepy==1.0.3 op
 uv pip install --no-build-isolation chumpy
 
 git clone https://huggingface.co/haiyangliu0/emage_evaltools
-```
 
-### 4.2 Inference & Video Rendering
-
-```bash
-# EMAGE (Full Body + Hands + Face): outputs .npz and .mp4 to ./examples/motion
-# Expected evaluation output on ./examples/audio: fgd ≈ 0.619, bc ≈ 0.790, l1 ≈ 12.64
+# Inference & rendering (.npz + .mp4 to ./examples/motion)
 python test_emage_audio.py --audio_folder ./examples/audio --save_folder ./examples/motion --visualization
-
-# CaMN / DisCo (Upper Body + Hands)
 python test_camn_audio.py --audio_folder ./examples/audio --save_folder ./examples/motion --visualization --nopytorch3d
 python test_disco_audio.py --audio_folder ./examples/audio --save_folder ./examples/motion --visualization --nopytorch3d
-```
 
-### 4.3 Direct Python API
-
-```python
-import torch, librosa
-from models.emage_audio import EmageAudioModel, EmageVQVAEConv, EmageVAEConv
-from emage_utils.motion_io import beat_format_save
-from emage_utils import fast_render
-
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-face_vq = EmageVQVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/face").to(device).eval()
-upper_vq = EmageVQVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/upper").to(device).eval()
-lower_vq = EmageVQVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/lower").to(device).eval()
-hands_vq = EmageVQVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/hands").to(device).eval()
-global_ae = EmageVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/global").to(device).eval()
-model = EmageAudioModel.from_pretrained("haiyangliu0/emage_audio").to(device).eval()
-
-audio_np, _ = librosa.load("./examples/audio/2_scott_0_1_1.wav", sr=16000)
-audio = torch.from_numpy(audio_np).float().to(device).unsqueeze(0)
-speaker_id = torch.zeros((1, 1), dtype=torch.long, device=device)
-
-with torch.no_grad():
-    out = model.inference(audio, speaker_id, face_vq, upper_vq, lower_vq, hands_vq, global_ae)
-    beat_format_save(
-        "./examples/motion/out.npz",
-        out["rec_pose"].squeeze(0).cpu().numpy(),
-        upsample=30,
-        expressions=out["rec_exp"].squeeze(0).cpu().numpy(),
-        trans=out["rec_trans"].squeeze(0).cpu().numpy(),
-    )
-
-fast_render.render_one_sequence_no_gt("./examples/motion/out.npz", "./examples/audio/2_scott_0_1_1.wav", "./examples/motion/")
-```
-
-### 4.4 Training on BEAT2 or Custom Speaker Data
-
-```bash
+# Training on BEAT2
 hf download haiyangliu0/BEAT2 --repo-type dataset --local-dir ./BEAT2
 python ./datasets/foot_contact.py
-
-# Optional: train VQ-VAEs (pretrained VQ-VAEs from haiyangliu0/emage_audio are used if skipped)
-torchrun --nproc_per_node=1 train_emage_audio.py --config ./configs/emage_audio.yaml --train_vq
-
-# Train policy model
 torchrun --nproc_per_node=1 train_emage_audio.py --config ./configs/emage_audio.yaml --evaluation
-torchrun --nproc_per_node=1 train_camn_audio.py --config ./configs/camn_audio.yaml --evaluation
-torchrun --nproc_per_node=1 train_disco_audio.py --config ./configs/disco_audio.yaml --evaluation
 ```
+
+---
+
+<div align="center">
+For custom speaker/character style capture or commercial collaboration: <a href="mailto:haiyangliu1997@gmail.com">✉️</a>
+</div>
