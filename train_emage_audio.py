@@ -227,11 +227,11 @@ def main(cfg):
         )
 
     # init
-    face_motion_vq = EmageVQVAEConv.from_pretrained("H-Liu1997/emage_audio", subfolder="emage_vq/face").to(device)
-    upper_motion_vq = EmageVQVAEConv.from_pretrained("H-Liu1997/emage_audio", subfolder="emage_vq/upper").to(device)
-    lower_motion_vq = EmageVQVAEConv.from_pretrained("H-Liu1997/emage_audio", subfolder="emage_vq/lower").to(device)
-    hands_motion_vq = EmageVQVAEConv.from_pretrained("H-Liu1997/emage_audio", subfolder="emage_vq/hands").to(device)
-    global_motion_ae = EmageVAEConv.from_pretrained("H-Liu1997/emage_audio", subfolder="emage_vq/global").to(device)
+    face_motion_vq = EmageVQVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/face").to(device)
+    upper_motion_vq = EmageVQVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/upper").to(device)
+    lower_motion_vq = EmageVQVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/lower").to(device)
+    hands_motion_vq = EmageVQVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/hands").to(device)
+    global_motion_ae = EmageVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/global").to(device)
     motion_vq = EmageVQModel(
       face_model=face_motion_vq, upper_model=upper_motion_vq,
       lower_model=lower_motion_vq, hands_model=hands_motion_vq,
