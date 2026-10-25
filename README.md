@@ -10,11 +10,9 @@ For custom speaker style capture or commercial collaboration: <a href="mailto:ha
 <br>
 
 <div align="center">
-    <a href="https://pantomatrix.github.io/EMAGE/"><img src="https://img.shields.io/badge/Project-EMAGE-skyblue?logo=github"></a>
-    <a href="https://pantomatrix.github.io/BEAT/"><img src="https://img.shields.io/badge/Project-BEAT-lightyellow?logo=github"></a>
-    <a href="https://pantomatrix.github.io/DisCo/"><img src="https://img.shields.io/badge/Project-DisCo-pink?logo=github"></a>
-    <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/HuggingFace-Space-gray?logo=huggingface"></a>
-    <a href="https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing"><img src="https://img.shields.io/badge/Colab-Demo-gray?logo=googlecolab"></a>
+    <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/Try_Our_Demo-HuggingFace_Space-blue?logo=huggingface"></a>
+    <a href="https://huggingface.co/haiyangliu0/emage_audio"><img src="https://img.shields.io/badge/Weights-HuggingFace_Models-yellow?logo=huggingface"></a>
+    <a href="https://huggingface.co/datasets/haiyangliu0/BEAT2"><img src="https://img.shields.io/badge/Dataset-HuggingFace_Datasets-green?logo=huggingface"></a>
 </div>
 
 <br>
