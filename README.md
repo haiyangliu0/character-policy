@@ -61,7 +61,7 @@ All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated o
 
 | Model | Venue | Similarity (FGD ↓) | Audio Alignment (BC ↑) | Diversity (L1Div ↑) | Inputs | Outputs | Links |
 |-------|-------|--------------------|------------------------|---------------------|--------|---------|-------|
-| **Real Data** | — | 0.000 | 0.703 | 11.97 | — | Full Body + Face | [BEAT2 Dataset](https://huggingface.co/datasets/haiyangliu0/BEAT2) |
+| **Real Data** | — | — | 0.703 | 11.97 | — | Full Body + Face | [BEAT2 Dataset](https://huggingface.co/datasets/haiyangliu0/BEAT2) |
 | **DisCo** (Haiyang Liu et al.) | ACM MM 2022 | 0.942 | 0.643 | 9.91 | Audio | Upper + Hands | [Weights](https://huggingface.co/haiyangliu0/disco_audio/tree/main) · [Paper](https://dl.acm.org/doi/abs/10.1145/3503161.3548400) |
 | **CaMN** (Haiyang Liu et al.) | ECCV 2022 | 0.664 | 0.676 | 10.86 | Audio | Upper + Hands | [Weights](https://huggingface.co/haiyangliu0/camn_audio/tree/main) · [Paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670605.pdf) |
 | **EMAGE** (Haiyang Liu et al.) | CVPR 2024 | 0.551 | 0.772 | 13.06 | Audio + Text | Full Body + Face | [Weights](https://huggingface.co/haiyangliu0/emage_audio/tree/main) · [Paper](https://arxiv.org/abs/2401.00374) |
