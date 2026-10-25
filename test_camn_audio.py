@@ -46,7 +46,7 @@ def main():
     os.makedirs(args.save_folder, exist_ok=True)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    model = CamnAudioModel.from_pretrained("H-Liu1997/camn_audio").to(device)
+    model = CamnAudioModel.from_pretrained("haiyangliu0/camn_audio").to(device)
     model.eval()
 
     audio_files = [os.path.join(args.audio_folder, f) for f in os.listdir(args.audio_folder) if f.endswith(".wav")]
