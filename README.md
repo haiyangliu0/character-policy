@@ -67,7 +67,7 @@ All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated o
 | **EMAGE** (Haiyang Liu et al.) | CVPR 2024 | 0.551 | 0.772 | 13.06 | Audio + Text | Full Body + Face | [Weights](https://huggingface.co/haiyangliu0/emage_audio/tree/main) · [Paper](https://arxiv.org/abs/2401.00374) |
 | **GestureLSM** (Pinxin Liu et al.) | ICCV 2025 | 0.409 | 0.714 | 13.24 | Audio + Text | Full Body + Face | [Code](https://github.com/andypinxinliu/GestureLSM) · [Paper](https://arxiv.org/abs/2501.18898) |
 | **Intentional-Gesture** (Pinxin Liu et al.) | NeurIPS 2026 | 0.379 | 0.690 | 11.00 | Audio + Text | Full Body + Face | [Code](https://github.com/andypinxinliu/Intentional-Gesture) · [Paper](https://arxiv.org/abs/2505.15197) |
-| **PersonaGesture** (Xiangyue Zhang et al.) | ArXiv 2026 | — | — | — | Audio + Ref Clip | Full Body | [Paper](https://arxiv.org/abs/2605.06064) |
+| **PersonaGesture** (Xiangyue Zhang et al.) | ArXiv 2026 | 0.393 | 0.710 | 13.25 | Audio + Ref Clip | Full Body + Face | [Paper](https://arxiv.org/pdf/2605.06064v1) |
 | **GestureFAR** (Pinxin Liu et al.) | ArXiv 2026 | **0.308** | **0.741** | **13.24** | Streaming Audio | Full Body + Face | [Code](https://github.com/andypinxinliu/GestureFAR) · [Paper](https://arxiv.org/abs/2609.21576) |
 
 ### Models from Community*
