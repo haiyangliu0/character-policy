@@ -73,22 +73,18 @@ All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated o
 ### Models from Community*
 *\*Agent-summarized models reported on BEAT2 (Speaker 2); may contain inaccuracies, issues or PRs for corrections and new entries are welcome.*
 
-| Model | Venue | Similarity (FGD ↓) | Audio Alignment (BC ↑) | Diversity (L1Div ↑) |
-|--------|-------|--------------------|------------------------|---------------------|
-| **Habibie et al.** (Ikhsanul Habibie et al.) | IVA 2021 | 0.904 | 0.772 | 8.21 |
-| **HA2G** (Xian Liu et al.) | CVPR 2022 | 1.232 | 0.677 | 8.63 |
-| **TalkSHOW** (Hongwei Yi et al.) | CVPR 2023 | 0.621 | 0.695 | 13.47 |
-| **DiffuseStyleGesture** (Sicheng Yang et al.) | IJCAI 2023 | 0.881 | 0.724 | 11.49 |
-| **LivelySpeaker** (Yihao Zhi et al.) | ICCV 2023 | 1.180 | 0.666 | 11.28 |
-| **DiffSHEG** (Junming Chen et al.) | CVPR 2024 | 0.714 | 0.743 | 8.21 |
-| **Audio2Photoreal** (Evonne Ng et al.) | CVPR 2024 | 1.020 | 0.550 | 12.47 |
-| **ProbTalk** (Yifei Liu et al.) | CVPR 2024 | 0.504 | 0.771 | 13.27 |
-| **SynTalker** (Bohong Chen et al.) | ACM MM 2024 | 0.469 | 0.736 | 12.43 |
-| **MambaTalk** (Zunnan Xu et al.) | NeurIPS 2024 | 0.537 | 0.781 | 13.05 |
-| **RAG-Gesture** (Mahmoud H. Mughal et al.) | CVPR 2025 | 0.879 | 0.730 | 12.62 |
-| **SemTalk** (Xiangyue Zhang et al.) | ICCV 2025 | 0.428 | 0.777 | 12.91 |
-| **MIBURI** (Mahmoud H. Mughal et al.) | CVPR 2026 | 0.806 | 0.790 | 17.50 |
-| **LiveGesture** (Muhammad H. Saleem et al.) | CVPR 2026 | 0.457 | 0.794 | 13.91 |
+| Model | Venue | Similarity (FGD ↓) | Audio Alignment (BC ↑) | Diversity (L1Div ↑) | Links |
+|-------|-------|--------------------|------------------------|---------------------|-------|
+| **LivelySpeaker** (Yihao Zhi et al.) | ICCV 2023 | 1.180 | 0.666 | 11.28 | [Code](https://github.com/zyhbili/LivelySpeaker) · [Paper](https://arxiv.org/abs/2309.09294) |
+| **DiffSHEG** (Junming Chen et al.) | CVPR 2024 | 0.714 | 0.743 | 8.21 | [Code](https://github.com/JeremyCJM/DiffSHEG) · [Paper](https://arxiv.org/abs/2401.04747) |
+| **Audio2Photoreal** (Evonne Ng et al.) | CVPR 2024 | 1.020 | 0.550 | 12.47 | [Code](https://github.com/facebookresearch/audio2photoreal) · [Paper](https://arxiv.org/abs/2401.01885) |
+| **ProbTalk** (Yifei Liu et al.) | CVPR 2024 | 0.504 | 0.771 | 13.27 | [Code](https://github.com/uuembodiedsocialai/ProbTalk3D) · [Paper](https://arxiv.org/abs/2409.07966) |
+| **SynTalker** (Bohong Chen et al.) | ACM MM 2024 | 0.469 | 0.736 | 12.43 | [Code](https://github.com/RobinWitch/SynTalker) · [Paper](https://arxiv.org/abs/2410.00464) |
+| **MambaTalk** (Zunnan Xu et al.) | NeurIPS 2024 | 0.537 | 0.781 | 13.05 | [Code](https://github.com/kkakkkka/MambaTalk) · [Paper](https://arxiv.org/abs/2403.09471) |
+| **RAG-Gesture** (Mahmoud H. Mughal et al.) | CVPR 2025 | 0.879 | 0.730 | 12.62 | [Code](https://github.com/m-hamza-mughal/RAG-Gesture) · [Paper](https://arxiv.org/abs/2412.06786) |
+| **SemTalk** (Xiangyue Zhang et al.) | ICCV 2025 | 0.428 | 0.777 | 12.91 | [Code](https://github.com/Xiangyue-Zhang/SemTalk) · [Paper](https://arxiv.org/abs/2412.16563) |
+| **MIBURI** (Mahmoud H. Mughal et al.) | CVPR 2026 | 0.806 | 0.790 | 17.50 | [Code](https://github.com/m-hamza-mughal/miburi) · [Paper](https://arxiv.org/abs/2603.03282) |
+| **LiveGesture** (Muhammad H. Saleem et al.) | CVPR 2026 | 0.457 | 0.794 | 13.91 | [Paper](https://arxiv.org/abs/2604.10927) |
 
 ### Datasets, Blender Add-on & Evaluation Tools
 
