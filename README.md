@@ -11,7 +11,7 @@ You may transfer these motion parameters to other formats such as Iphone ARKit B
 
 <div align="center">
     <a href="https://pantomatrix.github.io/EMAGE/"><img src="https://img.shields.io/badge/Project-EMAGE-skyblue?logo=github&amp"></a>
-    <!-- <a href="https://github.com/PantoMatrix/PantoMatrix/blob/main/scripts/EMAGE_2024/readme.md"><img src="https://img.shields.io/badge/Readme-gray?logo=readthedocs&amp"></a> -->
+    <!-- <a href="https://github.com/haiyangliu0/character-policy/blob/main/scripts/EMAGE_2024/readme.md"><img src="https://img.shields.io/badge/Readme-gray?logo=readthedocs&amp"></a> -->
     <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/Youtube-gray?logo=youtube&amp"></a>
     <a href="https://replicate.com/camenduru/emage"><img src="https://img.shields.io/badge/Replicate-gray?logo=google&amp"></a>
     <!-- <a href="https://colab.research.google.com/drive/1bB3LqAzceNTW2urXeMpOTPoJYTRoKlzB?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a> -->
@@ -22,7 +22,7 @@ You may transfer these motion parameters to other formats such as Iphone ARKit B
 
 <div align="center">
     <a href="https://pantomatrix.github.io/BEAT/"><img src="https://img.shields.io/badge/Project-BEAT-lightyellow?logo=github&amp"></a>
-    <!-- <a href="https://github.com/PantoMatrix/PantoMatrix/blob/main/scripts/EMAGE_2024/readme.md"><img src="https://img.shields.io/badge/Readme-gray?logo=readthedocs&amp"></a> -->
+    <!-- <a href="https://github.com/haiyangliu0/character-policy/blob/main/scripts/EMAGE_2024/readme.md"><img src="https://img.shields.io/badge/Readme-gray?logo=readthedocs&amp"></a> -->
     <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/Youtube-gray?logo=youtube&amp"></a>
     <!-- <a href="https://replicate.com/camenduru/emage"><img src="https://img.shields.io/badge/Replicate-gray?logo=google&amp"></a> -->
     <a href="https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a>
@@ -33,7 +33,7 @@ You may transfer these motion parameters to other formats such as Iphone ARKit B
 
 <div align="center">
     <a href="https://pantomatrix.github.io/DisCo/"><img src="https://img.shields.io/badge/Project-DisCo-pink?logo=github&amp"></a>
-    <!-- <a href="https://github.com/PantoMatrix/PantoMatrix/blob/main/scripts/EMAGE_2024/readme.md"><img src="https://img.shields.io/badge/Readme-gray?logo=readthedocs&amp"></a> -->
+    <!-- <a href="https://github.com/haiyangliu0/character-policy/blob/main/scripts/EMAGE_2024/readme.md"><img src="https://img.shields.io/badge/Readme-gray?logo=readthedocs&amp"></a> -->
     <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/Youtube-gray?logo=youtube&amp"></a>
     <a href="https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a>
     <!-- <a href="https://replicate.com/camenduru/emage"><img src="https://img.shields.io/badge/Replicate-gray?logo=google&amp"></a> -->
@@ -56,13 +56,13 @@ Welcome volunteers to contribute and collaborate on related topics. Feel free to
 - **[2024/07]** [download smplx motion (in .npz) file](https://huggingface.co/spaces/H-Liu1997/EMAGE), visualize with our blender addon and retarget to your avatar!
 - **[2024/04]** Thanks to [@camenduru](https://twitter.com/camenduru), Replicate version EMAGE is available! you can directly call EMAGE via API!
 - **[2024/03]** Thanks to [@sunday9999](https://github.com/sunday9999) for speeding up the inference video rendering from 1000s to 25s! 
-- **[2024/02]** Thanks to [@wubowen416](https://github.com/wubowen416) for the [scripts of automatic video visualization #83](https://github.com/PantoMatrix/PantoMatrix/issues/83) during inference!
+- **[2024/02]** Thanks to [@wubowen416](https://github.com/wubowen416) for the [scripts of automatic video visualization #83](https://github.com/haiyangliu0/character-policy/issues/83) during inference!
 - **[2023/05]** [BEAT_GENEA](https://drive.google.com/file/d/1wYW7eWAYPkYZ7WPOrZ9Z_GIll13-FZfx/view?usp=share_link) is allowed for pretraining in [GENEA2023](https://genea-workshop.github.io/2023/challenge/)! Thanks for GENEA's organizers! 
-<!-- - **[2024/03]** EMAGE Demos: [Colab demo](https://colab.research.google.com/drive/1AINafluW6Ba5-KYN_L43eyFK0zRklMvr?usp=sharing), [Gradio demo](https://github.com/PantoMatrix/PantoMatrix/tree/main/scripts/EMAGE_2024#user-content--gradio-demo).
-- **[2024/02]** Quick Access: [How to setup EMAGE](https://github.com/PantoMatrix/PantoMatrix/blob/main/scripts/EMAGE_2024/readme.md), [Details of BEAT](https://github.com/PantoMatrix/PantoMatrix/blob/main/scripts/BEAT_2022/readme_beat.md). 🚀!
+<!-- - **[2024/03]** EMAGE Demos: [Colab demo](https://colab.research.google.com/drive/1AINafluW6Ba5-KYN_L43eyFK0zRklMvr?usp=sharing), [Gradio demo](https://github.com/haiyangliu0/character-policy/tree/main/scripts/EMAGE_2024#user-content--gradio-demo).
+- **[2024/02]** Quick Access: [How to setup EMAGE](https://github.com/haiyangliu0/character-policy/blob/main/scripts/EMAGE_2024/readme.md), [Details of BEAT](https://github.com/haiyangliu0/character-policy/blob/main/scripts/BEAT_2022/readme_beat.md). 🚀!
 
 - **[2022/03]** CaMN training scripts from [anonymous submission](https://github.com/beat2022dataset/beat). -->
-<!-- - **[2024/02]** Training and Inference [Scripts](https://github.com/PantoMatrix/PantoMatrix/blob/main/scripts/EMAGE_2024/readme.md) are available for [EMAGE](https://pantomatrix.github.io/EMAGE/). -->
+<!-- - **[2024/02]** Training and Inference [Scripts](https://github.com/haiyangliu0/character-policy/blob/main/scripts/EMAGE_2024/readme.md) are available for [EMAGE](https://pantomatrix.github.io/EMAGE/). -->
 <!-- - **[2023/12]** [EMAGE](https://pantomatrix.github.io/EMAGE/) is available, including BEATX with both FLAME head and SMPLX body parameters.
 - **[2023/03]** [Samples](https://drive.google.com/drive/folders/1YLoGaJcrhp9Ap2tsJ4A5xNbKpzmDX6yD?usp=share_link) and [readme](https://github.com/PantoMatrix/BEAT/tree/main/beat2smpl) for SMPL-X body and hands data.
 - **[2023/01]** [English data v0.2.1](https://drive.google.com/file/d/1Akf0WgAwuH2fvlWbvNpif4XRqXlpznh9/view?usp=share_link) are available. Fix the orientation issue. See [updation](./docs/updation.md) for details.
@@ -110,7 +110,7 @@ Clone the repository and set up locally. <br>
 Demo of how to set up is available on [Colab](https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing).
 
 ```bash
-git clone https://github.com/PantoMatrix/PantoMatrix.git
+git clone https://github.com/haiyangliu0/character-policy.git
 cd PantoMatrix/
 
 bash setup.sh
@@ -285,9 +285,9 @@ This new codebase only have the audio-only version model for better real-world a
 
 | Model  | Inputs (Paper)      | Old Codebase | Input (Current Codebase)  | 
 |--------|---------------------|-----------------------------|---------------------|
-| DisCo  | Audio + Text        |    [link](https://github.com/PantoMatrix/PantoMatrix/tree/6ca70b9541285b124da2eeedcd80f7c5a54eb111/scripts/DisCo_2022)                         | Audio               |       
-| CaMN   | Audio + Text + Emotion + Facial |      [link](https://github.com/PantoMatrix/PantoMatrix/tree/6ca70b9541285b124da2eeedcd80f7c5a54eb111/scripts/BEAT_2022)               | Audio               |          
-| EMAGE  | Audio + Text        | [link](https://github.com/PantoMatrix/PantoMatrix/tree/6ca70b9541285b124da2eeedcd80f7c5a54eb111/scripts/EMAGE_2024)                      | Audio               |     
+| DisCo  | Audio + Text        |    [link](https://github.com/haiyangliu0/character-policy/tree/6ca70b9541285b124da2eeedcd80f7c5a54eb111/scripts/DisCo_2022)                         | Audio               |       
+| CaMN   | Audio + Text + Emotion + Facial |      [link](https://github.com/haiyangliu0/character-policy/tree/6ca70b9541285b124da2eeedcd80f7c5a54eb111/scripts/BEAT_2022)               | Audio               |          
+| EMAGE  | Audio + Text        | [link](https://github.com/haiyangliu0/character-policy/tree/6ca70b9541285b124da2eeedcd80f7c5a54eb111/scripts/EMAGE_2024)                      | Audio               |     
 
 
 #### Before Start
@@ -296,7 +296,7 @@ Environment setup, skip if you already setup the inference.
 ```bash
 
 # if you didn't run test, run the below four commands.
-# git clone https://github.com/PantoMatrix/PantoMatrix.git
+# git clone https://github.com/haiyangliu0/character-policy.git
 # cd PantoMatrix/
 # bash setup.sh
 # source /content/py39/bin/activate
@@ -362,7 +362,7 @@ torchrun --nproc_per_node 1 --nnodes 1 train_disco_audio.py --config ./configs/d
 EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via Expressive Masked Audio Gesture Modeling (CVPR 2024)
 
 <h4>
-<a href="https://h-liu1997.github.io/">Haiyang Liu</a>*,
+<a href="https://haiyangliu0.github.io/">Haiyang Liu</a>*,
 <a href="https://zzhat0706.github.io/PersonalPage/">Zihao Zhu</a>*,
 <a href="https://ps.is.mpg.de/person/gbecherini">Giorgio Becherini</a>, 
 <a href="https://scholar.google.com/citations?user=9sWVrREAAAAJ&hl=en">Yichen Peng</a>,
@@ -389,7 +389,7 @@ EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via Expressive Mask
 -
 <a href="https://www.youtube.com/watch?v=T0OYPvViFGE">Video</a>
 -
-<a href="https://github.com/PantoMatrix/PantoMatrix/tree/main/scripts/EMAGE_2024">Code</a>
+<a href="https://github.com/haiyangliu0/character-policy/tree/main/scripts/EMAGE_2024">Code</a>
 -
 <a href="https://colab.research.google.com/drive/1AINafluW6Ba5-KYN_L43eyFK0zRklMvr?usp=sharing">Demo</a>
 -
@@ -410,7 +410,7 @@ EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via Expressive Mask
 <h2>
 BEAT: A Large-Scale Semantic and Emotional Multi-Modal Dataset for Conversational Gestures Synthesis (ECCV 2022)
 <h4>
-<a href="https://h-liu1997.github.io/">Haiyang Liu</a>,
+<a href="https://haiyangliu0.github.io/">Haiyang Liu</a>,
 <a href="https://zzhat0706.github.io/PersonalPage/">Zihao Zhu</a>,
 <a href="https://iwanao731.github.io/">Naoya Iwamoto</a>,
 <a href="https://scholar.google.com/citations?user=9sWVrREAAAAJ&hl=en">Yichen Peng</a>,
@@ -432,7 +432,7 @@ BEAT: A Large-Scale Semantic and Emotional Multi-Modal Dataset for Conversationa
 -
 <a href="https://www.youtube.com/watch?v=F6nXVTUY0KQ">Video</a>
 -
-<a href="https://github.com/PantoMatrix/PantoMatrix/tree/main/scripts/BEAT_2022">Code</a>
+<a href="https://github.com/haiyangliu0/character-policy/tree/main/scripts/BEAT_2022">Code</a>
 -
 <a href="https://colab.research.google.com/drive/1bB3LqAzceNTW2urXeMpOTPoJYTRoKlzB?usp=sharing">Colab Demo</a>
 -
@@ -453,7 +453,7 @@ BEAT: A Large-Scale Semantic and Emotional Multi-Modal Dataset for Conversationa
 <h2>
 DisCo: Disentangled Implicit Content and Rhythm Learning for Diverse Co-Speech Gesture Synthesis (ACMMM 2022)
 <h4>
-<a href="https://h-liu1997.github.io/">Haiyang Liu</a>,
+<a href="https://haiyangliu0.github.io/">Haiyang Liu</a>,
 <a href="https://iwanao731.github.io/">Naoya Iwamoto</a>,
 <a href="https://zzhat0706.github.io/PersonalPage/">Zihao Zhu</a>,
 <a href="https://scholar.google.co.jp/citations?user=hgCoNowAAAAJ&hl=ja">Zhengqing Li</a>,
@@ -471,7 +471,7 @@ DisCo: Disentangled Implicit Content and Rhythm Learning for Diverse Co-Speech G
 -
 <a href="https://www.youtube.com/watch?v=Nd6NX27ykgA">Video</a>
 -
-<a href="https://github.com/PantoMatrix/PantoMatrix/tree/main/scripts/DisCo_2022">Code</a>
+<a href="https://github.com/haiyangliu0/character-policy/tree/main/scripts/DisCo_2022">Code</a>
 -
 </p>
 
