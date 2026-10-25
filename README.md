@@ -59,16 +59,16 @@ All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated o
 
 ### Models from `character-policy` Team
 
-| Model | Venue | Inputs | Outputs | Similarity (FGD ↓) | Audio Alignment (BC ↑) | Diversity (L1Div ↑) | Links |
-|-------|-------|--------|---------|--------------------|------------------------|---------------------|-------|
-| **Real Data** | — | — | Full Body + Face | 0.000 | 0.703 | 11.97 | [BEAT2 Dataset](https://huggingface.co/datasets/haiyangliu0/BEAT2) |
-| **DisCo** (Haiyang Liu et al.) | ACM MM 2022 | Audio | Upper + Hands | 0.942 | 0.643 | 9.91 | [Weights](https://huggingface.co/haiyangliu0/disco_audio/tree/main) · [Paper](https://dl.acm.org/doi/abs/10.1145/3503161.3548400) |
-| **CaMN** (Haiyang Liu et al.) | ECCV 2022 | Audio | Upper + Hands | 0.664 | 0.676 | 10.86 | [Weights](https://huggingface.co/haiyangliu0/camn_audio/tree/main) · [Paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670605.pdf) |
-| **EMAGE** (Haiyang Liu et al.) | CVPR 2024 | Audio + Text | Full Body + Face | 0.551 | 0.772 | 13.06 | [Weights](https://huggingface.co/haiyangliu0/emage_audio/tree/main) · [Paper](https://arxiv.org/abs/2401.00374) |
-| **GestureLSM** (Pinxin Liu et al.) | ICCV 2025 | Audio + Text | Full Body + Face | 0.409 | 0.714 | 13.24 | [Code](https://github.com/andypinxinliu/GestureLSM) · [Paper](https://arxiv.org/abs/2501.18898) |
-| **Intentional-Gesture** (Pinxin Liu et al.) | NeurIPS 2026 | Audio + Text | Full Body + Face | 0.379 | 0.690 | 11.00 | [Code](https://github.com/andypinxinliu/Intentional-Gesture) · [Paper](https://arxiv.org/abs/2505.15197) |
-| **PersonaGesture** (Xiangyue Zhang et al.) | ArXiv 2026 | Audio + Ref Clip | Full Body | — | — | — | [Paper](https://arxiv.org/abs/2605.06064) |
-| **GestureFAR** (Pinxin Liu et al.) | ArXiv 2026 | Streaming Audio | Full Body + Face | **0.308** | **0.741** | **13.24** | [Code](https://github.com/andypinxinliu/GestureFAR) · [Paper](https://arxiv.org/abs/2609.21576) |
+| Model | Venue | Similarity (FGD ↓) | Audio Alignment (BC ↑) | Diversity (L1Div ↑) | Inputs | Outputs | Links |
+|-------|-------|--------------------|------------------------|---------------------|--------|---------|-------|
+| **Real Data** | — | 0.000 | 0.703 | 11.97 | — | Full Body + Face | [BEAT2 Dataset](https://huggingface.co/datasets/haiyangliu0/BEAT2) |
+| **DisCo** (Haiyang Liu et al.) | ACM MM 2022 | 0.942 | 0.643 | 9.91 | Audio | Upper + Hands | [Weights](https://huggingface.co/haiyangliu0/disco_audio/tree/main) · [Paper](https://dl.acm.org/doi/abs/10.1145/3503161.3548400) |
+| **CaMN** (Haiyang Liu et al.) | ECCV 2022 | 0.664 | 0.676 | 10.86 | Audio | Upper + Hands | [Weights](https://huggingface.co/haiyangliu0/camn_audio/tree/main) · [Paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670605.pdf) |
+| **EMAGE** (Haiyang Liu et al.) | CVPR 2024 | 0.551 | 0.772 | 13.06 | Audio + Text | Full Body + Face | [Weights](https://huggingface.co/haiyangliu0/emage_audio/tree/main) · [Paper](https://arxiv.org/abs/2401.00374) |
+| **GestureLSM** (Pinxin Liu et al.) | ICCV 2025 | 0.409 | 0.714 | 13.24 | Audio + Text | Full Body + Face | [Code](https://github.com/andypinxinliu/GestureLSM) · [Paper](https://arxiv.org/abs/2501.18898) |
+| **Intentional-Gesture** (Pinxin Liu et al.) | NeurIPS 2026 | 0.379 | 0.690 | 11.00 | Audio + Text | Full Body + Face | [Code](https://github.com/andypinxinliu/Intentional-Gesture) · [Paper](https://arxiv.org/abs/2505.15197) |
+| **PersonaGesture** (Xiangyue Zhang et al.) | ArXiv 2026 | — | — | — | Audio + Ref Clip | Full Body | [Paper](https://arxiv.org/abs/2605.06064) |
+| **GestureFAR** (Pinxin Liu et al.) | ArXiv 2026 | **0.308** | **0.741** | **13.24** | Streaming Audio | Full Body + Face | [Code](https://github.com/andypinxinliu/GestureFAR) · [Paper](https://arxiv.org/abs/2609.21576) |
 
 ### Models from Community*
 *\*Agent-summarized models reported on BEAT2 (Speaker 2); may contain inaccuracies, issues or PRs for corrections and new entries are welcome.*
