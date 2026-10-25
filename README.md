@@ -1,6 +1,6 @@
 <div align="center">
-<h1>PantoMatrix<br>Generating Face and Body Animation from Speech</h1> 
-PantoMatrix is an Open-Source and research project to generate 3D body and face animation from speech. 
+<h1>CharacterPolicy<br>Generating Face and Body Animation from Speech</h1> 
+CharacterPolicy is an Open-Source and research project to generate 3D body and face animation from speech. 
 It works as an API inputs speech audio and outputs body and face motion parameters. 
 You may transfer these motion parameters to other formats such as Iphone ARKit Blendshape Weights or Vicon Skeleton bvh files. 
 </div>
@@ -111,7 +111,7 @@ Demo of how to set up is available on [Colab](https://colab.research.google.com/
 
 ```bash
 git clone https://github.com/haiyangliu0/character-policy.git
-cd PantoMatrix/
+cd character-policy/
 
 bash setup.sh
 source /content/py39/bin/activate
@@ -297,7 +297,7 @@ Environment setup, skip if you already setup the inference.
 
 # if you didn't run test, run the below four commands.
 # git clone https://github.com/haiyangliu0/character-policy.git
-# cd PantoMatrix/
+# cd character-policy/
 # bash setup.sh
 # source /content/py39/bin/activate
 
@@ -311,7 +311,7 @@ git clone https://huggingface.co/datasets/H-Liu1997/BEAT2
 Your folder should like follows for the correct path
 ```bash
 /your_root/
-|-- PantoMatrix
+|-- character-policy
    |-- BEAT2
    `-- train_emage_audio.py
 ```
