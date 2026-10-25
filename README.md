@@ -56,7 +56,6 @@ For custom speaker style capture or commercial collaboration: <a href="mailto:ha
 ## 2. Models & BEAT2 Benchmark
 
 All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated on BEAT2 (Speaker 2 `Scott`).
-*Note: Benchmark numbers below are summarized by agents from published papers (normalized to raw `emage_evaltools` FGD scale; some papers report `FGD × 10`). Issues and PRs for corrections or new entries are welcome.*
 
 ### Models from `character-policy` Team
 
@@ -71,7 +70,8 @@ All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated o
 | **PersonaGesture** (Xiangyue Zhang et al.) | 2026 | Audio + Ref Clip | Full Body | — | — | — | [Paper](https://arxiv.org/abs/2605.06064) |
 | **GestureFAR** (Pinxin Liu et al.) | 2026 | Streaming Audio | Full Body + Face | **0.308** | **0.741** | **13.24** | [Code](https://github.com/andypinxinliu/GestureFAR) · [Paper](https://arxiv.org/abs/2609.21576) |
 
-### Other Community Methods Reported on BEAT2 (Speaker 2)
+### Other Community Methods Reported on BEAT2 (Speaker 2)*
+*\*Summarized by agents from published papers (normalized to raw `emage_evaltools` FGD scale) and may contain inaccuracies; issues or PRs for corrections and new entries are welcome.*
 
 | Method | Venue | Similarity (FGD ↓) | Audio Alignment (BC ↑) | Diversity (L1Div ↑) |
 |--------|-------|--------------------|------------------------|---------------------|
