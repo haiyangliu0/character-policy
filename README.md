@@ -70,10 +70,10 @@ All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated o
 | **PersonaGesture** (Xiangyue Zhang et al.) | 2026 | Audio + Ref Clip | Full Body | — | — | — | [Paper](https://arxiv.org/abs/2605.06064) |
 | **GestureFAR** (Pinxin Liu et al.) | 2026 | Streaming Audio | Full Body + Face | **0.308** | **0.741** | **13.24** | [Code](https://github.com/andypinxinliu/GestureFAR) · [Paper](https://arxiv.org/abs/2609.21576) |
 
-### Other Community Methods Reported on BEAT2 (Speaker 2)*
-*\*Summarized by agents from published papers (normalized to raw `emage_evaltools` FGD scale) and may contain inaccuracies; issues or PRs for corrections and new entries are welcome.*
+### Models from Community*
+*\*Agent-summarized models reported on BEAT2 (Speaker 2); may contain inaccuracies, issues or PRs for corrections and new entries are welcome.*
 
-| Method | Venue | Similarity (FGD ↓) | Audio Alignment (BC ↑) | Diversity (L1Div ↑) |
+| Model | Venue | Similarity (FGD ↓) | Audio Alignment (BC ↑) | Diversity (L1Div ↑) |
 |--------|-------|--------------------|------------------------|---------------------|
 | **Habibie et al.** (Ikhsanul Habibie et al.) | IVA 2021 | 0.904 | 0.772 | 8.21 |
 | **HA2G** (Xian Liu et al.) | CVPR 2022 | 1.232 | 0.677 | 8.63 |
