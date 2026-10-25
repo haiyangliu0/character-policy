@@ -148,7 +148,7 @@ def main(cfg):
     # init 
     if cfg.test:
         from models.camn_audio import CamnAudioModel
-        model = CamnAudioModel.from_pretrained("H-Liu1997/camn_audio").to(device)
+        model = CamnAudioModel.from_pretrained("haiyangliu0/camn_audio").to(device)
     else:
         model = init_hf_class(cfg.model.name_pyfile, cfg.model.class_name, cfg.model).to(device)
     model = DDP(model, device_ids=[local_rank], output_device=local_rank, find_unused_parameters=True)
