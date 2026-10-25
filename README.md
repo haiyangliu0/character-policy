@@ -62,33 +62,35 @@ All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated o
 
 ### Models from `character-policy` Team
 
-| Model | First Author | Venue | Inputs | Outputs | Full-Body FGD ↓ | BC ↑ | L1Div ↑ | Links |
-|-------|--------------|-------|--------|---------|-----------------|------|---------|-------|
-| **Ground Truth** | — | — | — | Full Body + Face | 0.000 | 0.703 | 11.97 | [BEAT2 Dataset](https://huggingface.co/datasets/haiyangliu0/BEAT2) |
-| **DisCo** | [Haiyang Liu](https://haiyangliu0.github.io/) | ACM MM 2022 | Audio | Upper + Hands | 0.942 (2.233*) | 0.643 | 9.91 | [Weights](https://huggingface.co/haiyangliu0/disco_audio/tree/main) · [Paper](https://dl.acm.org/doi/abs/10.1145/3503161.3548400) |
-| **CaMN** | [Haiyang Liu](https://haiyangliu0.github.io/) | ECCV 2022 | Audio | Upper + Hands | 0.664 (2.120*) | 0.676 | 10.86 | [Weights](https://huggingface.co/haiyangliu0/camn_audio/tree/main) · [Paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670605.pdf) |
-| **EMAGE** | [Haiyang Liu](https://haiyangliu0.github.io/)\*, [Zihao Zhu](https://zzhat0706.github.io/PersonalPage/)\* | CVPR 2024 | Audio (+Text) | Full Body + Face | 0.551 (0.615*) | 0.772 | 13.06 | [Weights](https://huggingface.co/haiyangliu0/emage_audio/tree/main) · [Paper](https://arxiv.org/abs/2401.00374) |
-| **GestureLSM** | [Pinxin Liu](https://andypinxinliu.github.io/) | ICCV 2025 | Audio + Text | Full Body + Face | 0.409 | 0.714 | 13.24 | [Code](https://github.com/andypinxinliu/GestureLSM) · [Paper](https://arxiv.org/abs/2501.18898) |
-| **Intentional-Gesture** | [Pinxin Liu](https://andypinxinliu.github.io/) | NeurIPS 2025 | Audio + Text | Full Body + Face | 0.379 | 0.690 | 11.00 | [Code](https://github.com/andypinxinliu/Intentional-Gesture) · [Paper](https://arxiv.org/abs/2505.15197) |
-| **PersonaGesture** | Xiangyue Zhang | 2026 | Audio + Ref Clip | Full Body | — | — | — | [Paper](https://arxiv.org/abs/2605.06064) |
-| **GestureFAR** | [Pinxin Liu](https://andypinxinliu.github.io/) | 2026 | Streaming Audio | Full Body + Face | **0.308** | **0.741** | **13.24** | [Code](https://github.com/andypinxinliu/GestureFAR) · [Paper](https://arxiv.org/abs/2609.21576) |
-
-<sub>*Numbers in parentheses are audio-only checkpoints included directly in this repository (`test_*_audio.py`).</sub>
+| Model | Venue | Inputs | Outputs | Similarity (FGD ↓) | Audio Alignment (BC ↑) | Diversity (L1Div ↑) | Links |
+|-------|-------|--------|---------|--------------------|------------------------|---------------------|-------|
+| **Real Data** | — | — | Full Body + Face | 0.000 | 0.703 | 11.97 | [BEAT2 Dataset](https://huggingface.co/datasets/haiyangliu0/BEAT2) |
+| **DisCo** (Haiyang Liu et al.) | ACM MM 2022 | Audio | Upper + Hands | 0.942 | 0.643 | 9.91 | [Weights](https://huggingface.co/haiyangliu0/disco_audio/tree/main) · [Paper](https://dl.acm.org/doi/abs/10.1145/3503161.3548400) |
+| **CaMN** (Haiyang Liu et al.) | ECCV 2022 | Audio | Upper + Hands | 0.664 | 0.676 | 10.86 | [Weights](https://huggingface.co/haiyangliu0/camn_audio/tree/main) · [Paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670605.pdf) |
+| **EMAGE** (Haiyang Liu et al.) | CVPR 2024 | Audio + Text | Full Body + Face | 0.551 | 0.772 | 13.06 | [Weights](https://huggingface.co/haiyangliu0/emage_audio/tree/main) · [Paper](https://arxiv.org/abs/2401.00374) |
+| **GestureLSM** (Pinxin Liu et al.) | ICCV 2025 | Audio + Text | Full Body + Face | 0.409 | 0.714 | 13.24 | [Code](https://github.com/andypinxinliu/GestureLSM) · [Paper](https://arxiv.org/abs/2501.18898) |
+| **Intentional-Gesture** (Pinxin Liu et al.) | NeurIPS 2026 | Audio + Text | Full Body + Face | 0.379 | 0.690 | 11.00 | [Code](https://github.com/andypinxinliu/Intentional-Gesture) · [Paper](https://arxiv.org/abs/2505.15197) |
+| **PersonaGesture** (Xiangyue Zhang et al.) | 2026 | Audio + Ref Clip | Full Body | — | — | — | [Paper](https://arxiv.org/abs/2605.06064) |
+| **GestureFAR** (Pinxin Liu et al.) | 2026 | Streaming Audio | Full Body + Face | **0.308** | **0.741** | **13.24** | [Code](https://github.com/andypinxinliu/GestureFAR) · [Paper](https://arxiv.org/abs/2609.21576) |
 
 ### Other Community Methods Reported on BEAT2 (Speaker 2)
 
-| Method | First Author | Venue | Full-Body FGD ↓ | BC ↑ | L1Div ↑ |
-|--------|--------------|-------|-----------------|------|---------|
-| **HA2G** | Xian Liu | CVPR 2022 | 1.232 | 0.677 | 8.63 |
-| **TalkSHOW** | Hongwei Yi | CVPR 2023 | 0.621 | 0.695 | 13.47 |
-| **DiffSHEG** | Junming Chen | CVPR 2024 | 0.714 | 0.743 | 8.21 |
-| **Audio2Photoreal** | Evonne Ng | CVPR 2024 | 1.020 | 0.550 | 12.47 |
-| **ProbTalk** | Yifei Liu | CVPR 2024 | 0.504 | 0.771 | 13.27 |
-| **SynTalker** | Bohong Chen | ACM MM 2024 | 0.469 | 0.736 | 12.43 |
-| **MambaTalk** | Zunnan Xu | NeurIPS 2024 | 0.537 | 0.781 | 13.05 |
-| **RAG-Gesture** | Mahmoud H. Mughal | 2025 | 0.879 | 0.730 | 12.62 |
-| **MIBURI** | Mahmoud H. Mughal | CVPR 2026 | 0.806 | 0.790 | 17.50 |
-| **LiveGesture** | Muhammad H. Saleem | CVPR 2026 | 0.457 | 0.794 | 13.91 |
+| Method | Venue | Similarity (FGD ↓) | Audio Alignment (BC ↑) | Diversity (L1Div ↑) |
+|--------|-------|--------------------|------------------------|---------------------|
+| **Habibie et al.** (Ikhsanul Habibie et al.) | IVA 2021 | 0.904 | 0.772 | 8.21 |
+| **HA2G** (Xian Liu et al.) | CVPR 2022 | 1.232 | 0.677 | 8.63 |
+| **TalkSHOW** (Hongwei Yi et al.) | CVPR 2023 | 0.621 | 0.695 | 13.47 |
+| **DiffuseStyleGesture** (Sicheng Yang et al.) | IJCAI 2023 | 0.881 | 0.724 | 11.49 |
+| **LivelySpeaker** (Yihao Zhi et al.) | ICCV 2023 | 1.180 | 0.666 | 11.28 |
+| **DiffSHEG** (Junming Chen et al.) | CVPR 2024 | 0.714 | 0.743 | 8.21 |
+| **Audio2Photoreal** (Evonne Ng et al.) | CVPR 2024 | 1.020 | 0.550 | 12.47 |
+| **ProbTalk** (Yifei Liu et al.) | CVPR 2024 | 0.504 | 0.771 | 13.27 |
+| **SynTalker** (Bohong Chen et al.) | ACM MM 2024 | 0.469 | 0.736 | 12.43 |
+| **MambaTalk** (Zunnan Xu et al.) | NeurIPS 2024 | 0.537 | 0.781 | 13.05 |
+| **RAG-Gesture** (Mahmoud H. Mughal et al.) | CVPR 2025 | 0.879 | 0.730 | 12.62 |
+| **SemTalk** (Xiangyue Zhang et al.) | ICCV 2025 | 0.428 | 0.777 | 12.91 |
+| **MIBURI** (Mahmoud H. Mughal et al.) | CVPR 2026 | 0.806 | 0.790 | 17.50 |
+| **LiveGesture** (Muhammad H. Saleem et al.) | CVPR 2026 | 0.457 | 0.794 | 13.91 |
 
 ### Datasets, Blender Add-on & Evaluation Tools
 
