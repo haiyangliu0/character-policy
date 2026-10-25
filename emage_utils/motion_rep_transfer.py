@@ -13,7 +13,7 @@ if not os.path.exists(smplx_model_dir):
     if not os.path.exists(smplx_model_file_path):
         print(f"Downloading {smplx_model_file_path}")
         wget.download(
-            "https://huggingface.co/spaces/H-Liu1997/EMAGE/resolve/main/EMAGE/smplx_models/smplx/SMPLX_NEUTRAL_2020.npz",
+            "https://huggingface.co/haiyangliu0/emage_evaltools/resolve/main/smplx_models/smplx/SMPLX_NEUTRAL_2020.npz",
             smplx_model_file_path,
         )
 
