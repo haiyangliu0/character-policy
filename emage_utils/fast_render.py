@@ -1,7 +1,9 @@
 import os
 import time
+import sys
 import numpy as np
-os.environ['PYOPENGL_PLATFORM'] = 'egl'  # or 'osmesa'
+if sys.platform != 'darwin' and 'PYOPENGL_PLATFORM' not in os.environ:
+    os.environ['PYOPENGL_PLATFORM'] = 'egl'
 import pyrender
 import trimesh
 import queue

@@ -1,484 +1,196 @@
 <div align="center">
-<h1>CharacterPolicy<br>Generating Face and Body Animation from Speech</h1> 
-CharacterPolicy is an Open-Source and research project to generate 3D body and face animation from speech. 
-It works as an API inputs speech audio and outputs body and face motion parameters. 
-You may transfer these motion parameters to other formats such as Iphone ARKit Blendshape Weights or Vicon Skeleton bvh files. 
+<h1>character-policy<br>Generating Face and Body Animation from Speech</h1>
+<code>character-policy</code> is an Open-Source and research project to generate 3D body and face animation from speech.
+It works as an API inputs speech audio and outputs body and face motion parameters.
+You may transfer these motion parameters to other formats such as Iphone ARKit Blendshape Weights or Vicon Skeleton bvh files.
+<br><br>
+For custom speaker style capture or commercial collaboration: <a href="mailto:haiyangliu1997@gmail.com">haiyangliu1997@gmail.com</a>
 </div>
-<!-- [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/emage-towards-unified-holistic-co-speech/3d-face-animation-on-beat2)](https://paperswithcode.com/sota/3d-face-animation-on-beat2?p=emage-towards-unified-holistic-co-speech)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/emage-towards-unified-holistic-co-speech/gesture-generation-on-beat2)](https://paperswithcode.com/sota/gesture-generation-on-beat2?p=emage-towards-unified-holistic-co-speech) -->
 
 <br>
 
 <div align="center">
-    <a href="https://pantomatrix.github.io/EMAGE/"><img src="https://img.shields.io/badge/Project-EMAGE-skyblue?logo=github&amp"></a>
-    <!-- <a href="https://github.com/haiyangliu0/character-policy/blob/main/scripts/EMAGE_2024/readme.md"><img src="https://img.shields.io/badge/Readme-gray?logo=readthedocs&amp"></a> -->
-    <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/Youtube-gray?logo=youtube&amp"></a>
-    <a href="https://replicate.com/camenduru/emage"><img src="https://img.shields.io/badge/Replicate-gray?logo=google&amp"></a>
-    <!-- <a href="https://colab.research.google.com/drive/1bB3LqAzceNTW2urXeMpOTPoJYTRoKlzB?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a> -->
-    <a href="https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a>
-    <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a>
-    <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/CVPR 2024-gray?logo=arxiv&amp"></a>
+    <a href="https://pantomatrix.github.io/EMAGE/"><img src="https://img.shields.io/badge/Project-EMAGE-skyblue?logo=github"></a>
+    <a href="https://pantomatrix.github.io/BEAT/"><img src="https://img.shields.io/badge/Project-BEAT-lightyellow?logo=github"></a>
+    <a href="https://pantomatrix.github.io/DisCo/"><img src="https://img.shields.io/badge/Project-DisCo-pink?logo=github"></a>
+    <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/HuggingFace-Space-gray?logo=huggingface"></a>
+    <a href="https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing"><img src="https://img.shields.io/badge/Colab-Demo-gray?logo=googlecolab"></a>
 </div>
 
-<div align="center">
-    <a href="https://pantomatrix.github.io/BEAT/"><img src="https://img.shields.io/badge/Project-BEAT-lightyellow?logo=github&amp"></a>
-    <!-- <a href="https://github.com/haiyangliu0/character-policy/blob/main/scripts/EMAGE_2024/readme.md"><img src="https://img.shields.io/badge/Readme-gray?logo=readthedocs&amp"></a> -->
-    <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/Youtube-gray?logo=youtube&amp"></a>
-    <!-- <a href="https://replicate.com/camenduru/emage"><img src="https://img.shields.io/badge/Replicate-gray?logo=google&amp"></a> -->
-    <a href="https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a>
-    <!-- <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a> -->
-    <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a>
-    <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/ECCV 2022-gray?logo=arxiv&amp"></a>
-</div>
+<br>
 
-<div align="center">
-    <a href="https://pantomatrix.github.io/DisCo/"><img src="https://img.shields.io/badge/Project-DisCo-pink?logo=github&amp"></a>
-    <!-- <a href="https://github.com/haiyangliu0/character-policy/blob/main/scripts/EMAGE_2024/readme.md"><img src="https://img.shields.io/badge/Readme-gray?logo=readthedocs&amp"></a> -->
-    <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/Youtube-gray?logo=youtube&amp"></a>
-    <a href="https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a>
-    <!-- <a href="https://replicate.com/camenduru/emage"><img src="https://img.shields.io/badge/Replicate-gray?logo=google&amp"></a> -->
-    <!-- <a href="https://colab.research.google.com/drive/1bB3LqAzceNTW2urXeMpOTPoJYTRoKlzB?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a> -->
-    <!-- <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a> -->
-    <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a>
-    <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/ACMMM 2022-gray?logo=arxiv&amp"></a>
-</div>
-
-<h2>1. News</h2>
+## 1. Demo
 
 <div align="center">
   <img src="assets/intro.gif" alt="Animation Example" style="width:95%; clip-path: inset(0px 0px 3px 0px);">
 </div>
 
-Welcome volunteers to contribute and collaborate on related topics. Feel free to submit the pull requests! Currently this repo is mainly maintained by haiyangliu1997@gmail.com in freetime since 2022.
- 
-- **[2025/01]** Demo of how to set up inference and training is available on [Colab](https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing)!
-- **[2025/01]** New inference api, visualization api, evaluation api, training codebase, are available!
-- **[2024/07]** [download smplx motion (in .npz) file](https://huggingface.co/spaces/haiyangliu0/EMAGE), visualize with our blender addon and retarget to your avatar!
-- **[2024/04]** Thanks to [@camenduru](https://twitter.com/camenduru), Replicate version EMAGE is available! you can directly call EMAGE via API!
-- **[2024/03]** Thanks to [@sunday9999](https://github.com/sunday9999) for speeding up the inference video rendering from 1000s to 25s! 
-- **[2024/02]** Thanks to [@wubowen416](https://github.com/wubowen416) for the [scripts of automatic video visualization #83](https://github.com/haiyangliu0/character-policy/issues/83) during inference!
-- **[2023/05]** [BEAT_GENEA](https://drive.google.com/file/d/1wYW7eWAYPkYZ7WPOrZ9Z_GIll13-FZfx/view?usp=share_link) is allowed for pretraining in [GENEA2023](https://genea-workshop.github.io/2023/challenge/)! Thanks for GENEA's organizers! 
-<!-- - **[2024/03]** EMAGE Demos: [Colab demo](https://colab.research.google.com/drive/1AINafluW6Ba5-KYN_L43eyFK0zRklMvr?usp=sharing), [Gradio demo](https://github.com/haiyangliu0/character-policy/tree/main/scripts/EMAGE_2024#user-content--gradio-demo).
-- **[2024/02]** Quick Access: [How to setup EMAGE](https://github.com/haiyangliu0/character-policy/blob/main/scripts/EMAGE_2024/readme.md), [Details of BEAT](https://github.com/haiyangliu0/character-policy/blob/main/scripts/BEAT_2022/readme_beat.md). 🚀!
+<table align="center">
+  <tr>
+    <td align="center"><b>DisCo (3D Mesh)</b></td>
+    <td align="center"><b>CaMN (3D Mesh)</b></td>
+    <td align="center"><b>EMAGE (3D Mesh)</b></td>
+  </tr>
+  <tr>
+    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_disco_mesh.mp4"><img src="./assets/videos/2_scott_0_103_103_output_disco_mesh_v1.gif" width="240"></a></td>
+    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_camn_mesh.mp4"><img src="./assets/videos/2_scott_0_103_103_output_camn_mesh_V2.gif" width="240"></a></td>
+    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_emage_mesh.mp4"><img src="./assets/videos/2_scott_0_103_103_output_emage_mesh_v1.gif" width="480"></a></td>
+  </tr>
+</table>
 
-- **[2022/03]** CaMN training scripts from [anonymous submission](https://github.com/beat2022dataset/beat). -->
-<!-- - **[2024/02]** Training and Inference [Scripts](https://github.com/haiyangliu0/character-policy/blob/main/scripts/EMAGE_2024/readme.md) are available for [EMAGE](https://pantomatrix.github.io/EMAGE/). -->
-<!-- - **[2023/12]** [EMAGE](https://pantomatrix.github.io/EMAGE/) is available, including BEATX with both FLAME head and SMPLX body parameters.
-- **[2023/03]** [Samples](https://drive.google.com/drive/folders/1YLoGaJcrhp9Ap2tsJ4A5xNbKpzmDX6yD?usp=share_link) and [readme](https://github.com/PantoMatrix/BEAT/tree/main/beat2smpl) for SMPL-X body and hands data.
-- **[2023/01]** [English data v0.2.1](https://drive.google.com/file/d/1Akf0WgAwuH2fvlWbvNpif4XRqXlpznh9/view?usp=share_link) are available. Fix the orientation issue. See [updation](./docs/updation.md) for details.
-- **[2023/01]** Provide checkpoints (#14, #16), scripts for rendering (#17), preprocessing (#18).  
-- **[2022/12]** Provide English data in Zip files (#10).
-- **[2022/10]** [Project page](https://pantomatrix.github.io/BEAT/) and [rendered videos](https://drive.google.com/drive/folders/1ghZ7_4LkCyM_IZxTElzAwPzGheLrBGBu) are available.
-- **[2022/08]** [All languages data v0.1.0](https://drive.google.com/drive/folders/1CVyJOp3G_A9l1N_CsKdHgXQfB4pXhG8c?usp=share_link)  (in separated files) are available. -->
+<table align="center">
+  <tr>
+    <td align="center"><b>DisCo (2D Pose)</b></td>
+    <td align="center"><b>CaMN (2D Pose)</b></td>
+    <td align="center"><b>EMAGE (2D Pose)</b></td>
+    <td align="center"><b>EMAGE-Face (2D Pose)</b></td>
+  </tr>
+  <tr>
+    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_disco.mp4"><img src="./assets/videos/2_scott_0_103_103_disco_V1.gif" width="240"></a></td>
+    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_camn.mp4"><img src="./assets/videos/2_scott_0_103_103_output_camn_V1.gif" width="240"></a></td>
+    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_emage.mp4"><img src="./assets/videos/2_scott_0_103_103_output_emage_V1.gif" width="240"></a></td>
+    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_emage_face.mp4"><img src="./assets/videos/2_scott_0_103_103_output_emage_face_V1.gif" width="240"></a></td>
+  </tr>
+</table>
 
-<br>
+---
 
-## 2. Models and Tools List
+## 2. Models & BEAT2 Benchmark
 
+All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated on BEAT2 (Speaker 2 `Scott`).
+*Note: Benchmark numbers below are summarized by agents from published papers (normalized to raw `emage_evaltools` FGD scale; some papers report `FGD × 10`). Issues and PRs for corrections or new entries are welcome.*
 
-| Model  | Paper           | Inputs | Outputs**         | Language (Train)         | Full Body FGD | Weights |
-|--------|-----------------|--------|------------------|--------------------------|-------------------------------|---------|
-| DisCo  | ACMMM 2022     | Audio  | Upper + Hands    | English (Speaker 2) | 2.233                            |    [Link](https://huggingface.co/haiyangliu0/disco_audio/tree/main)     |
-| CaMN   | ECCV 2022      | Audio  | Upper + Hands    | English (Speaker 2) | 2.120                         |     [Link](https://huggingface.co/haiyangliu0/camn_audio/tree/main)    |
-| EMAGE  | CVPR 2024      | Audio  | Full Body + Face | English (Speaker 2) | 0.615                        |    [Link](https://huggingface.co/haiyangliu0/emage_audio/tree/main)     |
+### Models from `character-policy` Team
 
-** Outputs are in SMPLX and FLAME parameters. 
+| Model | First Author | Venue | Inputs | Outputs | Full-Body FGD ↓ | BC ↑ | L1Div ↑ | Links |
+|-------|--------------|-------|--------|---------|-----------------|------|---------|-------|
+| **Ground Truth** | — | — | — | Full Body + Face | 0.000 | 0.703 | 11.97 | [BEAT2 Dataset](https://huggingface.co/datasets/haiyangliu0/BEAT2) |
+| **DisCo** | [Haiyang Liu](https://haiyangliu0.github.io/) | ACM MM 2022 | Audio | Upper + Hands | 0.942 (2.233*) | 0.643 | 9.91 | [Weights](https://huggingface.co/haiyangliu0/disco_audio/tree/main) · [Paper](https://dl.acm.org/doi/abs/10.1145/3503161.3548400) |
+| **CaMN** | [Haiyang Liu](https://haiyangliu0.github.io/) | ECCV 2022 | Audio | Upper + Hands | 0.664 (2.120*) | 0.676 | 10.86 | [Weights](https://huggingface.co/haiyangliu0/camn_audio/tree/main) · [Paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670605.pdf) |
+| **EMAGE** | [Haiyang Liu](https://haiyangliu0.github.io/)\*, [Zihao Zhu](https://zzhat0706.github.io/PersonalPage/)\* | CVPR 2024 | Audio (+Text) | Full Body + Face | 0.551 (0.615*) | 0.772 | 13.06 | [Weights](https://huggingface.co/haiyangliu0/emage_audio/tree/main) · [Paper](https://arxiv.org/abs/2401.00374) |
+| **GestureLSM** | [Pinxin Liu](https://andypinxinliu.github.io/) | ICCV 2025 | Audio + Text | Full Body + Face | 0.409 | 0.714 | 13.24 | [Code](https://github.com/andypinxinliu/GestureLSM) · [Paper](https://arxiv.org/abs/2501.18898) |
+| **Intentional-Gesture** | [Pinxin Liu](https://andypinxinliu.github.io/) | NeurIPS 2025 | Audio + Text | Full Body + Face | 0.379 | 0.690 | 11.00 | [Code](https://github.com/andypinxinliu/Intentional-Gesture) · [Paper](https://arxiv.org/abs/2505.15197) |
+| **PersonaGesture** | Xiangyue Zhang | 2026 | Audio + Ref Clip | Full Body | — | — | — | [Paper](https://arxiv.org/abs/2605.06064) |
+| **GestureFAR** | [Pinxin Liu](https://andypinxinliu.github.io/) | 2026 | Streaming Audio | Full Body + Face | **0.308** | **0.741** | **13.24** | [Code](https://github.com/andypinxinliu/GestureFAR) · [Paper](https://arxiv.org/abs/2609.21576) |
 
-|        |                      |                    |                     |
-|--------|----------------------|--------------------|---------------------|
-| Datasets      | [BEAT2 (SMPLX+FLAME)](https://huggingface.co/datasets/haiyangliu0/BEAT2) | [BEAT (BVH + ARKit)](https://huggingface.co/datasets/haiyangliu0/BEAT)    | [Rendered Skeleton Videos](https://huggingface.co/datasets/haiyangliu0/BEAT_Rendered_Videos) |
-| Blender Tools | [Blender Addon](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/smplx_blender_addon_20230921.zip) | [Character on BEAT](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/BEAT_Avatars.zip) | [Blender Render Scripts](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/rendervideo.zip) |
-| SMPLX Tools   | [SMPLX-FLAME Model](https://huggingface.co/haiyangliu0/emage_evaltools/blob/main/smplx_models/smplx/SMPLX_NEUTRAL_2020.npz) | [ARKit2FLAME Sripts](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/ARkit_FLAME.zip) | [ARkit2FLAME Weights](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/mat_final.npy) |
-| Weights       | [FGD on BEAT2](https://huggingface.co/haiyangliu0/emage_evaltools/blob/main/AESKConv_240_100.bin) | [FGD on BEAT](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/beat_weights/ae_300.bin) | [Text Vocab](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/emage_weights/vocab.pkl) |
+<sub>*Numbers in parentheses are audio-only checkpoints included directly in this repository (`test_*_audio.py`).</sub>
 
+### Other Community Methods Reported on BEAT2 (Speaker 2)
 
+| Method | First Author | Venue | Full-Body FGD ↓ | BC ↑ | L1Div ↑ |
+|--------|--------------|-------|-----------------|------|---------|
+| **HA2G** | Xian Liu | CVPR 2022 | 1.232 | 0.677 | 8.63 |
+| **TalkSHOW** | Hongwei Yi | CVPR 2023 | 0.621 | 0.695 | 13.47 |
+| **DiffSHEG** | Junming Chen | CVPR 2024 | 0.714 | 0.743 | 8.21 |
+| **Audio2Photoreal** | Evonne Ng | CVPR 2024 | 1.020 | 0.550 | 12.47 |
+| **ProbTalk** | Yifei Liu | CVPR 2024 | 0.504 | 0.771 | 13.27 |
+| **SynTalker** | Bohong Chen | ACM MM 2024 | 0.469 | 0.736 | 12.43 |
+| **MambaTalk** | Zunnan Xu | NeurIPS 2024 | 0.537 | 0.781 | 13.05 |
+| **RAG-Gesture** | Mahmoud H. Mughal | 2025 | 0.879 | 0.730 | 12.62 |
+| **MIBURI** | Mahmoud H. Mughal | CVPR 2026 | 0.806 | 0.790 | 17.50 |
+| **LiveGesture** | Muhammad H. Saleem | CVPR 2026 | 0.457 | 0.794 | 13.91 |
 
-<br>
+### Datasets, Blender Add-on & Evaluation Tools
 
+| Category | Resource 1 | Resource 2 | Resource 3 |
+|----------|------------|------------|------------|
+| **Datasets** | [BEAT2 (SMPL-X + FLAME)](https://huggingface.co/datasets/haiyangliu0/BEAT2) | [BEAT (BVH + ARKit)](https://huggingface.co/datasets/haiyangliu0/BEAT) | [Rendered Skeleton Videos](https://huggingface.co/datasets/haiyangliu0/BEAT_Rendered_Videos) |
+| **Blender Tools** | [Blender Addon](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/smplx_blender_addon_20230921.zip) | [Character on BEAT](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/BEAT_Avatars.zip) | [Blender Render Scripts](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/rendervideo.zip) |
+| **SMPL-X & Eval** | [SMPLX-FLAME Model](https://huggingface.co/haiyangliu0/emage_evaltools/blob/main/smplx_models/smplx/SMPLX_NEUTRAL_2020.npz) | [FGD on BEAT2](https://huggingface.co/haiyangliu0/emage_evaltools/blob/main/AESKConv_240_100.bin) | [ARKit2FLAME Tools](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/ARkit_FLAME.zip) |
 
-## 3. Quick Start (Inference)
+---
 
-#### Approach 1: Using Hugging Face Space
-Upload your audio and directly download the results from our Hugging Face Space.
+## 3. Input / Output Schema
 
-<div align="center">
-  <img src="assets/gradio.png" alt="Animation Example" style="width:95%; clip-path: inset(0px 0px 3px 0px);">
-</div>
+* **Input**: `.wav` mono speech audio (resampled automatically to `16,000 Hz`).
+* **Output**: `.npz` dictionary at `30 FPS` (`T = int(audio_seconds * 30)`), saved via `emage_utils.motion_io.beat_format_save`:
 
-#### Approach 2: Local Setup
-Clone the repository and set up locally. <br>
-Demo of how to set up is available on [Colab](https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing).
+| Key | Shape & Dtype | Specification |
+|-----|---------------|---------------|
+| `poses` | `(T, 165)` `float32` | SMPL-X 55-joint axis-angle (`0:3` root, `3:66` 21 body, `66:69` jaw, `69:75` eyes, `75:165` 30 hands) |
+| `expressions` | `(T, 100)` `float32` | FLAME 100-D facial expression parameters |
+| `trans` | `(T, 3)` `float32` | Global root translation in meters |
+| `betas` | `(300,)` `float32` | SMPL-X shape parameters |
+| `mocap_frame_rate` | `30` | Frame rate (`30` FPS) |
+| `gender` / `model` | `"neutral"` / `"smplx2020"` | Mesh topology identifiers |
+
+---
+
+## 4. Environment, Inference, Evaluation & Training (Agent Execution Spec)
+
+### 4.1 Environment Setup (`uv`)
 
 ```bash
 git clone https://github.com/haiyangliu0/character-policy.git
-cd character-policy/
+cd character-policy
 
-bash setup.sh
-source /content/py39/bin/activate
+uv venv .venv --python 3.10
+source .venv/bin/activate
+uv pip install "setuptools<70" pip wheel "numpy<1.24"
+uv pip install torch torchvision torchaudio librosa==0.9.2 soundfile scipy scikit-learn tqdm pyyaml wandb
+uv pip install transformers==4.46.3 huggingface_hub accelerate einops timm
+uv pip install smplx==0.1.28 trimesh pyrender pyopengl imageio moviepy==1.0.3 opencv-python wget
+uv pip install --no-build-isolation chumpy
 
-python test_camn_audio.py --visualization 
-# if you have trouble in install pytroch3d
-# use --nopytorch3d, this will not render the 2D openpose style video
-python test_camn_audio.py --visualization --nopytorch3d
-
-# try differnet models with your data, put your audio in --audio_folder
-# DisCo (ACMMM2022), upper body motion, with data resampling and rhythm content disentanglement.
-python test_disco_audio.py --visualization --audio_folder ./examples/audio --save_folder ./examples/motion 
-# BEAT (ECCV2022), upper body motion, with body2hands decoder
-python test_camn_audio.py --visualization --audio_folder ./examples/audio --save_folder ./examples/motion
-# EMAGE (CVPR2024), full body  + face animation 
-python test_emage_audio.py --visualization --audio_folder ./examples/audio --save_folder ./examples/motion
+git clone https://huggingface.co/haiyangliu0/emage_evaltools
 ```
 
-#### Approach 3: Call API Directly
+### 4.2 Inference & Video Rendering
 
-```python
-# copy the ./models folder iin your project folder
-from .model.camn_audio import CaMNAudioModel
+```bash
+# EMAGE (Full Body + Hands + Face): outputs .npz and .mp4 to ./examples/motion
+# Expected evaluation output on ./examples/audio: fgd ≈ 0.619, bc ≈ 0.790, l1 ≈ 12.64
+python test_emage_audio.py --audio_folder ./examples/audio --save_folder ./examples/motion --visualization
 
-model = CaMNAudioModel.from_pretrained("haiyangliu0/camn_audio")
-model.cuda().eval()
-
-import librosa
-import numpy as np
-import torch
-# copy the ./emage_utils folder in your project folder
-from emage_utils import beat_format_save
-
-audio_np, sr = librosa.load("/audio_path.wav", sr=model.cfg.audio_sr)
-audio = torch.from_numpy(audio_np).float().cuda().unsqueeze(0)
-
-motion_pred = model(audio)["motion_axis_angle"]
-motion_pred_np = motion_pred.cpu().numpy()
-beat_format_save(motion_pred_np, "/result_motion.npz")
+# CaMN / DisCo (Upper Body + Hands)
+python test_camn_audio.py --audio_folder ./examples/audio --save_folder ./examples/motion --visualization --nopytorch3d
+python test_disco_audio.py --audio_folder ./examples/audio --save_folder ./examples/motion --visualization --nopytorch3d
 ```
 
-<br>
-
-
-## 4. Visualization
-
-When you run the test scripts, 
-there is an parameter `--visualization` to automatic enable visualizaion. 
-<br>Besides, you could also try visualiztion by the below.
-
-#### Approach 1: Blender (Recommended)
-Render the output using Blender by download the [blender addon](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/smplx_blender_addon_20230921.zip)
-
-
-
-#### Approach 2: 3D mesh
+### 4.3 Direct Python API
 
 ```python
-# render a npz file to a mesh video
-from emage_utils import fast_render
-fast_render.render_one_sequence_no_gt("/result_motion.npz", "/audio_path.wav", "/result_video.mp4", remove_global=True)
-```
-
-<table class="center">
-  <tr>
-    <td style="text-align: center"><b>DisCo (Mesh)</b></td>
-    <td style="text-align: center"><b>CaMN (Mesh)</b></td>
-    <td style="text-align: center"><b>EMAGE (Mesh)</b></td>
-  </tr>
-  <tr>
-    <td style="text-align: center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_disco_mesh.mp4"><img src="./assets/videos/2_scott_0_103_103_output_disco_mesh_v1.gif" width="240"></a></td>
-    <td style="text-align: center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_camn_mesh.mp4"><img src="./assets/videos/2_scott_0_103_103_output_camn_mesh_V2.gif" width="240"></a></td>
-    <td style="text-align: center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_emage_mesh.mp4"><img src="./assets/videos/2_scott_0_103_103_output_emage_mesh_v1.gif" width="480"></a></td>
-  </tr>
-</table>
-
-#### Approach 3: 2D OpenPose style video (Require Pytorch3D)
-
-```python
-from trochvision.io import write_video
-from emage_utils.format_transfer import render2d
+import torch, librosa
+from models.emage_audio import EmageAudioModel, EmageVQVAEConv, EmageVAEConv
+from emage_utils.motion_io import beat_format_save
 from emage_utils import fast_render
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+face_vq = EmageVQVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/face").to(device).eval()
+upper_vq = EmageVQVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/upper").to(device).eval()
+lower_vq = EmageVQVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/lower").to(device).eval()
+hands_vq = EmageVQVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/hands").to(device).eval()
+global_ae = EmageVAEConv.from_pretrained("haiyangliu0/emage_audio", subfolder="emage_vq/global").to(device).eval()
+model = EmageAudioModel.from_pretrained("haiyangliu0/emage_audio").to(device).eval()
 
-motion_dict = np.load(npz_path, allow_pickle=True)
-# face
-v2d_face = render2d(motion_dict, (512, 512), face_only=True, remove_global=True)
-write_video(npz_path.replace(".npz", "_2dface.mp4"), v2d_face.permute(0, 2, 3, 1), fps=30)
-fast_render.add_audio_to_video(npz_path.replace(".npz", "_2dface.mp4"), audio_path, npz_path.replace(".npz", "_2dface_audio.mp4"))
+audio_np, _ = librosa.load("./examples/audio/2_scott_0_1_1.wav", sr=16000)
+audio = torch.from_numpy(audio_np).float().to(device).unsqueeze(0)
+speaker_id = torch.zeros((1, 1), dtype=torch.long, device=device)
 
-# body
-v2d_body = render2d(motion_dict, (720, 480), face_only=False, remove_global=True)
-write_video(npz_path.replace(".npz", "_2dbody.mp4"), v2d_body.permute(0, 2, 3, 1), fps=30)
-fast_render.add_audio_to_video(npz_path.replace(".npz", "_2dbody.mp4"), audio_path, npz_path.replace(".npz", "_2dbody_audio.mp4"))
+with torch.no_grad():
+    out = model.inference(audio, speaker_id, face_vq, upper_vq, lower_vq, hands_vq, global_ae)
+    beat_format_save(
+        "./examples/motion/out.npz",
+        out["rec_pose"].squeeze(0).cpu().numpy(),
+        upsample=30,
+        expressions=out["rec_exp"].squeeze(0).cpu().numpy(),
+        trans=out["rec_trans"].squeeze(0).cpu().numpy(),
+    )
+
+fast_render.render_one_sequence_no_gt("./examples/motion/out.npz", "./examples/audio/2_scott_0_1_1.wav", "./examples/motion/")
 ```
 
+### 4.4 Training on BEAT2 or Custom Speaker Data
 
-<table class="center">
-  <tr>
-    <td style="text-align: center"><b>DisCo (2D Pose)</b></td>
-    <td style="text-align: center"><b>CaMN (2D Pose)</b></td>
-    <td style="text-align: center"><b>EMAGE (2D Pose)</b></td>
-    <td style="text-align: center"><b>EMAGE-Face (2D Pose)</b></td>
-  </tr>
-  <tr>
-    <td style="text-align: center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_disco.mp4"><img src="./assets/videos/2_scott_0_103_103_disco_V1.gif" width="240"></a></td>
-    <td style="text-align: center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_camn.mp4"><img src="./assets/videos/2_scott_0_103_103_output_camn_V1.gif" width="240"></a></td>
-    <td style="text-align: center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_emage.mp4"><img src="./assets/videos/2_scott_0_103_103_output_emage_V1.gif" width="240"></a></td>
-    <td style="text-align: center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_emage_face.mp4"><img src="./assets/videos/2_scott_0_103_103_output_emage_face_V1.gif" width="240"></a></td>
-  </tr>
-</table>
-
-
-<br>
-
-## 5. Evaluation
-
-For academic users, the evaluation code is organized into an evaluation API. 
-
-```python
-# copy the ./emage_evaltools folder into your folder
-from emage_evaltools.metric import FGD, BC, L1Div, LVDFace, MSEFace
-
-# init
-fgd_evaluator = FGD(download_path="./emage_evaltools/")
-bc_evaluator = BC(download_path="./emage_evaltools/", sigma=0.3, order=7)
-l1div_evaluator= L1div()
-lvd_evaluator = LVDFace()
-mse_evaluator = MSEFace()
-
-# Example usage
-for motion_pred in all_motion_pred:
-    # bc and l1 require position representation
-    motion_position_pred = get_motion_rep_numpy(motion_pred, device=device, betas=betas)["position"] # t*55*3
-    motion_position_pred = motion_position_pred.reshape(t, -1)
-    # ignore the start and end 2s, this may for beat dataset only
-    audio_beat = bc_evaluator.load_audio(test_file["audio_path"], t_start=2 * 16000, t_end=int((t-60)/30*16000))
-    motion_beat = bc_evaluator.load_motion(motion_position_pred, t_start=60, t_end=t-60, pose_fps=30, without_file=True)
-    bc_evaluator.compute(audio_beat, motion_beat, length=t-120, pose_fps=30)
-
-    l1_evaluator.compute(motion_position_pred)
-    
-    face_position_pred = get_motion_rep_numpy(motion_pred, device=device, expressions=expressions_pred, expression_only=True, betas=betas)["vertices"] # t -1
-    face_position_gt = get_motion_rep_numpy(motion_gt, device=device, expressions=expressions_gt, expression_only=True, betas=betas)["vertices"]
-    lvd_evaluator.compute(face_position_pred, face_position_gt)
-    mse_evaluator.compute(face_position_pred, face_position_gt)
-    
-    # fgd requires rotation 6d representaiton
-    motion_gt = torch.from_numpy(motion_gt).to(device).unsqueeze(0)
-    motion_pred = torch.from_numpy(motion_pred).to(device).unsqueeze(0)
-    motion_gt = rc.axis_angle_to_rotation_6d(motion_gt.reshape(1, t, 55, 3)).reshape(1, t, 55*6)
-    motion_pred = rc.axis_angle_to_rotation_6d(motion_pred.reshape(1, t, 55, 3)).reshape(1, t, 55*6)
-    fgd_evaluator.update(motion_pred.float(), motion_gt.float())
-    
-metrics = {}
-metrics["fgd"] = fgd_evaluator.compute()
-metrics["bc"] = bc_evaluator.avg()
-metrics["l1"] = l1_evaluator.avg()
-metrics["lvd"] = lvd_evaluator.avg()
-metrics["mse"] = mse_evaluator.avg()
-```
-
-Hyperparameters may vary depending on the dataset. 
-<br> For example, for the BEAT dataset, we use `(0.3, 7)`; for the TalkShow dataset, we use `(0.5, 7)`. You may adjust based on your data.
-
-<br>
-
-## 6. Training
-
-This new codebase only have the audio-only version model for better real-world applications. <br>For reproducing audio+text results in the paper, please check and reference the previous codebase below.
-
-| Model  | Inputs (Paper)      | Old Codebase | Input (Current Codebase)  | 
-|--------|---------------------|-----------------------------|---------------------|
-| DisCo  | Audio + Text        |    [link](https://github.com/haiyangliu0/character-policy/tree/6ca70b9541285b124da2eeedcd80f7c5a54eb111/scripts/DisCo_2022)                         | Audio               |       
-| CaMN   | Audio + Text + Emotion + Facial |      [link](https://github.com/haiyangliu0/character-policy/tree/6ca70b9541285b124da2eeedcd80f7c5a54eb111/scripts/BEAT_2022)               | Audio               |          
-| EMAGE  | Audio + Text        | [link](https://github.com/haiyangliu0/character-policy/tree/6ca70b9541285b124da2eeedcd80f7c5a54eb111/scripts/EMAGE_2024)                      | Audio               |     
-
-
-#### Before Start
-
-Environment setup, skip if you already setup the inference.
 ```bash
-
-# if you didn't run test, run the below four commands.
-# git clone https://github.com/haiyangliu0/character-policy.git
-# cd character-policy/
-# bash setup.sh
-# source /content/py39/bin/activate
-
-# Download the BEAT2
-sudo apt-get update
-sudo apt-get install git-lfs
-git lfs install
-git clone https://huggingface.co/datasets/haiyangliu0/BEAT2
-```
-
-Your folder should like follows for the correct path
-```bash
-/your_root/
-|-- character-policy
-   |-- BEAT2
-   `-- train_emage_audio.py
-```
-
-####  Method 1: Training EMAGE
-
-#### 
-```bash
-# Preprocessing Extract the foot contact data
+hf download haiyangliu0/BEAT2 --repo-type dataset --local-dir ./BEAT2
 python ./datasets/foot_contact.py
 
-# (todo) train the vqvae
+# Optional: train VQ-VAEs (pretrained VQ-VAEs from haiyangliu0/emage_audio are used if skipped)
+torchrun --nproc_per_node=1 train_emage_audio.py --config ./configs/emage_audio.yaml --train_vq
 
-# train the audio2motion model
-torchrun --nproc_per_node 1 --nnodes 1 train_emage_audio.py --config ./configs/emage_audio.yaml --evaluation
+# Train policy model
+torchrun --nproc_per_node=1 train_emage_audio.py --config ./configs/emage_audio.yaml --evaluation
+torchrun --nproc_per_node=1 train_camn_audio.py --config ./configs/camn_audio.yaml --evaluation
+torchrun --nproc_per_node=1 train_disco_audio.py --config ./configs/disco_audio.yaml --evaluation
 ```
-Use these flags as needed:
-
-- `--evaluation`: Calculate the test metric.
-- `--wandb`: Activate logging to WandB.
-- `--visualization`: Render test results (slow; disable for efficiency).
-- `--test`: Test mode; load last checkpoint and evaluate.
-- `--debug`: Debug mode; iterate one data point for fast testing.
-
-
-#### Method 2: Training CaMN
-
-```bash
-torchrun --nproc_per_node 1 --nnodes 1 train_camn_audio.py --config ./configs/camn_audio.yaml --evaluation
-```
-
-#### Method 3: Training DisCo
-
-```bash
-# (optional) Extract the cluster information
-# python ./datasets/clustering.py
-
-# train audio2motion 
-torchrun --nproc_per_node 1 --nnodes 1 train_disco_audio.py --config ./configs/disco_audio.yaml --evaluation
-```
-
-<br>
-
-<h2> Reference </h2>
-
-<div align="center">
-<h2>
-EMAGE: Towards Unified Holistic Co-Speech Gesture Generation via Expressive Masked Audio Gesture Modeling (CVPR 2024)
-
-<h4>
-<a href="https://haiyangliu0.github.io/">Haiyang Liu</a>*,
-<a href="https://zzhat0706.github.io/PersonalPage/">Zihao Zhu</a>*,
-<a href="https://ps.is.mpg.de/person/gbecherini">Giorgio Becherini</a>, 
-<a href="https://scholar.google.com/citations?user=9sWVrREAAAAJ&hl=en">Yichen Peng</a>,
-<a>Mingyang Su</a>,
-<a>You Zhou</a>,
-<a href="https://iwanao731.github.io/">Naoya Iwamoto</a>,
-<a href="http://www.bozheng-lab.com/">Bo Zheng</a>,
-<a href="https://ps.is.mpg.de/person/black">Michael J. Black</a>
-<br>
-<br>
-<sup>(*Equal Contribution)</sup>
-<sub>
-</div>
-
-<p align="center">
-<img src ="assets/EMAGE_2024/res.png" width="100%">
-</p>
-
-<p align="center">
--
-<a href="https://pantomatrix.github.io/EMAGE/">Project Page</a>
--
-<a href="https://arxiv.org/abs/2401.00374">Paper</a>
--
-<a href="https://www.youtube.com/watch?v=T0OYPvViFGE">Video</a>
--
-<a href="https://github.com/haiyangliu0/character-policy/tree/main/scripts/EMAGE_2024">Code</a>
--
-<a href="https://colab.research.google.com/drive/1AINafluW6Ba5-KYN_L43eyFK0zRklMvr?usp=sharing">Demo</a>
--
-<a href="https://drive.google.com/drive/folders/1ukbifhHc85qWTzspEgvAxCXwn9mK4ifr">Dataset</a>
--
-<a href="https://drive.google.com/drive/folders/1ukbifhHc85qWTzspEgvAxCXwn9mK4ifr">Blender Add-On</a>
--
-</p>
-
-<p align=center>
-    <a href="https://www.youtube.com/watch?v=T0OYPvViFGE">
-    <img  width="68%" src="assets/EMAGE_2024/th.png">
-    </a>
-</p>
-
-------------
-<div align="center">
-<h2>
-BEAT: A Large-Scale Semantic and Emotional Multi-Modal Dataset for Conversational Gestures Synthesis (ECCV 2022)
-<h4>
-<a href="https://haiyangliu0.github.io/">Haiyang Liu</a>,
-<a href="https://zzhat0706.github.io/PersonalPage/">Zihao Zhu</a>,
-<a href="https://iwanao731.github.io/">Naoya Iwamoto</a>,
-<a href="https://scholar.google.com/citations?user=9sWVrREAAAAJ&hl=en">Yichen Peng</a>,
-<a href="https://scholar.google.co.jp/citations?user=hgCoNowAAAAJ&hl=ja">Zhengqing Li</a>,
-<a>You Zhou</a>,
-<a href="https://scholar.google.com.sg/citations?user=Bm1TcmsAAAAJ&hl=en">Elif Bozkurt</a>,
-<a href="http://www.bozheng-lab.com/">Bo Zheng</a>
-</div>
-
-<p align="center">
-<img src ="assets/BEAT_2022/data2.png" width="100%">
-</p>
-
-<p align="center">
--
-<a href="https://pantomatrix.github.io/BEAT/">Project Page</a>
--
-<a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670605.pdf">Paper</a>
--
-<a href="https://www.youtube.com/watch?v=F6nXVTUY0KQ">Video</a>
--
-<a href="https://github.com/haiyangliu0/character-policy/tree/main/scripts/BEAT_2022">Code</a>
--
-<a href="https://colab.research.google.com/drive/1bB3LqAzceNTW2urXeMpOTPoJYTRoKlzB?usp=sharing">Colab Demo</a>
--
-<a href="https://pantomatrix.github.io/BEAT-Dataset/">Dataset</a>
--
-<a href="https://paperswithcode.com/sota/gesture-generation-on-beat?p=beat-a-large-scale-semantic-and-emotional">Benchmark</a>
--
-</p>
-
-<p align=center>
-    <a href="https://www.youtube.com/watch?v=F6nXVTUY0KQ">
-    <img  width="68%" src="assets/BEAT_2022/th.png">
-    </a>
-</p>
-
-------------
-<div align="center">
-<h2>
-DisCo: Disentangled Implicit Content and Rhythm Learning for Diverse Co-Speech Gesture Synthesis (ACMMM 2022)
-<h4>
-<a href="https://haiyangliu0.github.io/">Haiyang Liu</a>,
-<a href="https://iwanao731.github.io/">Naoya Iwamoto</a>,
-<a href="https://zzhat0706.github.io/PersonalPage/">Zihao Zhu</a>,
-<a href="https://scholar.google.co.jp/citations?user=hgCoNowAAAAJ&hl=ja">Zhengqing Li</a>,
-<a>You Zhou</a>,
-<a href="https://scholar.google.com.sg/citations?user=Bm1TcmsAAAAJ&hl=en">Elif Bozkurt</a>,
-<a href="http://www.bozheng-lab.com/">Bo Zheng</a>
-</div>
-<img src ="assets/DisCo_2022/teaser.png" width="100%">
-
-<p align="center">
--
-<a href="https://pantomatrix.github.io/DisCo/">Project Page</a>
--
-<a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548400">Paper</a>
--
-<a href="https://www.youtube.com/watch?v=Nd6NX27ykgA">Video</a>
--
-<a href="https://github.com/haiyangliu0/character-policy/tree/main/scripts/DisCo_2022">Code</a>
--
-</p>
-
-<p align=center>
-    <a href="https://www.youtube.com/watch?v=Nd6NX27ykgA">
-    <img  width="68%" src="assets/DisCo_2022/th.png">
-    </a>
-</p>
-
-
