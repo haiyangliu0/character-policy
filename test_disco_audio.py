@@ -46,7 +46,7 @@ def main():
     os.makedirs(args.save_folder, exist_ok=True)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    model = DiscoAudioModel.from_pretrained("H-Liu1997/disco_audio").to(device)
+    model = DiscoAudioModel.from_pretrained("haiyangliu0/disco_audio").to(device)
     model.eval()
 
     audio_files = [os.path.join(args.audio_folder, f) for f in os.listdir(args.audio_folder) if f.endswith(".wav")]
