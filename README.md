@@ -16,7 +16,7 @@ You may transfer these motion parameters to other formats such as Iphone ARKit B
     <a href="https://replicate.com/camenduru/emage"><img src="https://img.shields.io/badge/Replicate-gray?logo=google&amp"></a>
     <!-- <a href="https://colab.research.google.com/drive/1bB3LqAzceNTW2urXeMpOTPoJYTRoKlzB?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a> -->
     <a href="https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a>
-    <a href="https://huggingface.co/spaces/H-Liu1997/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a>
+    <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a>
     <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/CVPR 2024-gray?logo=arxiv&amp"></a>
 </div>
 
@@ -26,8 +26,8 @@ You may transfer these motion parameters to other formats such as Iphone ARKit B
     <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/Youtube-gray?logo=youtube&amp"></a>
     <!-- <a href="https://replicate.com/camenduru/emage"><img src="https://img.shields.io/badge/Replicate-gray?logo=google&amp"></a> -->
     <a href="https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a>
-    <!-- <a href="https://huggingface.co/spaces/H-Liu1997/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a> -->
-    <a href="https://huggingface.co/spaces/H-Liu1997/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a>
+    <!-- <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a> -->
+    <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a>
     <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/ECCV 2022-gray?logo=arxiv&amp"></a>
 </div>
 
@@ -38,8 +38,8 @@ You may transfer these motion parameters to other formats such as Iphone ARKit B
     <a href="https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a>
     <!-- <a href="https://replicate.com/camenduru/emage"><img src="https://img.shields.io/badge/Replicate-gray?logo=google&amp"></a> -->
     <!-- <a href="https://colab.research.google.com/drive/1bB3LqAzceNTW2urXeMpOTPoJYTRoKlzB?usp=sharing"><img src="https://img.shields.io/badge/Colab-gray?logo=Google%20Colab&amp"></a> -->
-    <!-- <a href="https://huggingface.co/spaces/H-Liu1997/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a> -->
-    <a href="https://huggingface.co/spaces/H-Liu1997/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a>
+    <!-- <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a> -->
+    <a href="https://huggingface.co/spaces/haiyangliu0/EMAGE"><img src="https://img.shields.io/badge/Huggingface Space-gray?logo=huggingface&amp"></a>
     <a href="https://www.youtube.com/watch?v=T0OYPvViFGE"><img src="https://img.shields.io/badge/ACMMM 2022-gray?logo=arxiv&amp"></a>
 </div>
 
@@ -53,7 +53,7 @@ Welcome volunteers to contribute and collaborate on related topics. Feel free to
  
 - **[2025/01]** Demo of how to set up inference and training is available on [Colab](https://colab.research.google.com/drive/1MeuZtBv8yUUG9FFeN8UGy78Plk4gzxT4?usp=sharing)!
 - **[2025/01]** New inference api, visualization api, evaluation api, training codebase, are available!
-- **[2024/07]** [download smplx motion (in .npz) file](https://huggingface.co/spaces/H-Liu1997/EMAGE), visualize with our blender addon and retarget to your avatar!
+- **[2024/07]** [download smplx motion (in .npz) file](https://huggingface.co/spaces/haiyangliu0/EMAGE), visualize with our blender addon and retarget to your avatar!
 - **[2024/04]** Thanks to [@camenduru](https://twitter.com/camenduru), Replicate version EMAGE is available! you can directly call EMAGE via API!
 - **[2024/03]** Thanks to [@sunday9999](https://github.com/sunday9999) for speeding up the inference video rendering from 1000s to 25s! 
 - **[2024/02]** Thanks to [@wubowen416](https://github.com/wubowen416) for the [scripts of automatic video visualization #83](https://github.com/haiyangliu0/character-policy/issues/83) during inference!
@@ -78,18 +78,18 @@ Welcome volunteers to contribute and collaborate on related topics. Feel free to
 
 | Model  | Paper           | Inputs | Outputs**         | Language (Train)         | Full Body FGD | Weights |
 |--------|-----------------|--------|------------------|--------------------------|-------------------------------|---------|
-| DisCo  | ACMMM 2022     | Audio  | Upper + Hands    | English (Speaker 2) | 2.233                            |    [Link](https://huggingface.co/H-Liu1997/disco_audio/tree/main)     |
-| CaMN   | ECCV 2022      | Audio  | Upper + Hands    | English (Speaker 2) | 2.120                         |     [Link](https://huggingface.co/H-Liu1997/camn_audio/tree/main)    |
-| EMAGE  | CVPR 2024      | Audio  | Full Body + Face | English (Speaker 2) | 0.615                        |    [Link](https://huggingface.co/H-Liu1997/emage_audio/tree/main)     |
+| DisCo  | ACMMM 2022     | Audio  | Upper + Hands    | English (Speaker 2) | 2.233                            |    [Link](https://huggingface.co/haiyangliu0/disco_audio/tree/main)     |
+| CaMN   | ECCV 2022      | Audio  | Upper + Hands    | English (Speaker 2) | 2.120                         |     [Link](https://huggingface.co/haiyangliu0/camn_audio/tree/main)    |
+| EMAGE  | CVPR 2024      | Audio  | Full Body + Face | English (Speaker 2) | 0.615                        |    [Link](https://huggingface.co/haiyangliu0/emage_audio/tree/main)     |
 
 ** Outputs are in SMPLX and FLAME parameters. 
 
 |        |                      |                    |                     |
 |--------|----------------------|--------------------|---------------------|
-| Datasets      | [BEAT2 (SMPLX+FLAME)](https://huggingface.co/datasets/H-Liu1997/BEAT2) | [BEAT (BVH + ARKit)](https://huggingface.co/datasets/H-Liu1997/BEAT)    | [Rendered Skeleton Videos](https://huggingface.co/datasets/H-Liu1997/BEAT_Rendered_Videos) |
-| Blender Tools | [Blender Addon](https://huggingface.co/datasets/H-Liu1997/BEAT2_Tools/blob/main/smplx_blender_addon_20230921.zip) | [Character on BEAT](https://huggingface.co/datasets/H-Liu1997/BEAT2_Tools/blob/main/BEAT_Avatars.zip) | [Blender Render Scripts](https://huggingface.co/datasets/H-Liu1997/BEAT2_Tools/blob/main/rendervideo.zip) |
-| SMPLX Tools   | [SMPLX-FLAME Model](https://huggingface.co/H-Liu1997/emage_evaltools/blob/main/smplx_models/smplx/SMPLX_NEUTRAL_2020.npz) | [ARKit2FLAME Sripts](https://huggingface.co/datasets/H-Liu1997/BEAT2_Tools/blob/main/ARkit_FLAME.zip) | [ARkit2FLAME Weights](https://huggingface.co/datasets/H-Liu1997/BEAT2_Tools/blob/main/mat_final.npy) |
-| Weights       | [FGD on BEAT2](https://huggingface.co/H-Liu1997/emage_evaltools/blob/main/AESKConv_240_100.bin) | [FGD on BEAT](https://huggingface.co/datasets/H-Liu1997/BEAT2_Tools/blob/main/beat_weights/ae_300.bin) | [Text Vocab](https://huggingface.co/datasets/H-Liu1997/BEAT2_Tools/blob/main/emage_weights/vocab.pkl) |
+| Datasets      | [BEAT2 (SMPLX+FLAME)](https://huggingface.co/datasets/haiyangliu0/BEAT2) | [BEAT (BVH + ARKit)](https://huggingface.co/datasets/haiyangliu0/BEAT)    | [Rendered Skeleton Videos](https://huggingface.co/datasets/haiyangliu0/BEAT_Rendered_Videos) |
+| Blender Tools | [Blender Addon](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/smplx_blender_addon_20230921.zip) | [Character on BEAT](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/BEAT_Avatars.zip) | [Blender Render Scripts](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/rendervideo.zip) |
+| SMPLX Tools   | [SMPLX-FLAME Model](https://huggingface.co/haiyangliu0/emage_evaltools/blob/main/smplx_models/smplx/SMPLX_NEUTRAL_2020.npz) | [ARKit2FLAME Sripts](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/ARkit_FLAME.zip) | [ARkit2FLAME Weights](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/mat_final.npy) |
+| Weights       | [FGD on BEAT2](https://huggingface.co/haiyangliu0/emage_evaltools/blob/main/AESKConv_240_100.bin) | [FGD on BEAT](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/beat_weights/ae_300.bin) | [Text Vocab](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/emage_weights/vocab.pkl) |
 
 
 
@@ -136,7 +136,7 @@ python test_emage_audio.py --visualization --audio_folder ./examples/audio --sav
 # copy the ./models folder iin your project folder
 from .model.camn_audio import CaMNAudioModel
 
-model = CaMNAudioModel.from_pretrained("H-Liu1997/huggingface-model/camn_audio")
+model = CaMNAudioModel.from_pretrained("haiyangliu0/camn_audio")
 model.cuda().eval()
 
 import librosa
@@ -163,7 +163,7 @@ there is an parameter `--visualization` to automatic enable visualizaion.
 <br>Besides, you could also try visualiztion by the below.
 
 #### Approach 1: Blender (Recommended)
-Render the output using Blender by download the [blender addon](https://huggingface.co/datasets/H-Liu1997/BEAT2_Tools/blob/main/smplx_blender_addon_20230921.zip)
+Render the output using Blender by download the [blender addon](https://huggingface.co/datasets/haiyangliu0/BEAT2_Tools/blob/main/smplx_blender_addon_20230921.zip)
 
 
 
@@ -305,7 +305,7 @@ Environment setup, skip if you already setup the inference.
 sudo apt-get update
 sudo apt-get install git-lfs
 git lfs install
-git clone https://huggingface.co/datasets/H-Liu1997/BEAT2
+git clone https://huggingface.co/datasets/haiyangliu0/BEAT2
 ```
 
 Your folder should like follows for the correct path
