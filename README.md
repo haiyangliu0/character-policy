@@ -34,35 +34,22 @@ such as SMPL, transferable to iPhone ARKit Blendshape weights, Vicon Skeleton BV
 
 ## 1. Demo
 
-<div align="center">
-  <img src="assets/intro.gif" alt="Animation Example" style="width:95%; clip-path: inset(0px 0px 3px 0px);">
-</div>
-
 <table align="center">
   <tr>
-    <td align="center"><b>DisCo (3D Mesh)</b></td>
-    <td align="center"><b>CaMN (3D Mesh)</b></td>
-    <td align="center"><b>EMAGE (3D Mesh)</b></td>
+    <td align="center"><b>FD2 (2.3 ms Real-Time Stream)</b></td>
+    <td align="center"><b>Triangular Resampling (120s+ Long-Horizon Rollout)</b></td>
   </tr>
   <tr>
-    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_disco_mesh.mp4"><img src="./assets/videos/2_scott_0_103_103_output_disco_mesh_v1.gif" width="240"></a></td>
-    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_camn_mesh.mp4"><img src="./assets/videos/2_scott_0_103_103_output_camn_mesh_V2.gif" width="240"></a></td>
-    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_emage_mesh.mp4"><img src="./assets/videos/2_scott_0_103_103_output_emage_mesh_v1.gif" width="480"></a></td>
-  </tr>
-</table>
-
-<table align="center">
-  <tr>
-    <td align="center"><b>DisCo (2D Pose)</b></td>
-    <td align="center"><b>CaMN (2D Pose)</b></td>
-    <td align="center"><b>EMAGE (2D Pose)</b></td>
-    <td align="center"><b>EMAGE-Face (2D Pose)</b></td>
+    <td align="center"><a target="_blank" href="./assets/videos/demo_01_fd2.mp4"><img src="./assets/videos/demo_01_fd2.gif" width="420"></a></td>
+    <td align="center"><a target="_blank" href="./assets/videos/demo_02_tr.mp4"><img src="./assets/videos/demo_02_tr.gif" width="420"></a></td>
   </tr>
   <tr>
-    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_disco.mp4"><img src="./assets/videos/2_scott_0_103_103_disco_V1.gif" width="240"></a></td>
-    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_camn.mp4"><img src="./assets/videos/2_scott_0_103_103_output_camn_V1.gif" width="240"></a></td>
-    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_emage.mp4"><img src="./assets/videos/2_scott_0_103_103_output_emage_V1.gif" width="240"></a></td>
-    <td align="center"><a target="_blank" href="./assets/videos/2_scott_0_103_103_output_emage_face.mp4"><img src="./assets/videos/2_scott_0_103_103_output_emage_face_V1.gif" width="240"></a></td>
+    <td align="center"><b>World2Motion (GPT-6 + 3D World Grounding)</b></td>
+    <td align="center"><b>Co-Speech (Audio → Full-Body & 3D Avatar)</b></td>
+  </tr>
+  <tr>
+    <td align="center"><a target="_blank" href="./assets/videos/demo_03_w2m.mp4"><img src="./assets/videos/demo_03_w2m.gif" width="420"></a></td>
+    <td align="center"><a target="_blank" href="./assets/videos/demo_04_cospeech.mp4"><img src="./assets/videos/demo_04_cospeech.gif" width="420"></a></td>
   </tr>
 </table>
 
