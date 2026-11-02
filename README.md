@@ -87,8 +87,10 @@ All outputs are in SMPL-X (body + hands) and FLAME (face) parameters evaluated o
 | **MambaTalk** (Zunnan Xu et al.) | NeurIPS 2024 | 0.537 | 0.781 | 13.05 | [Code](https://github.com/kkakkkka/MambaTalk) · [Paper](https://arxiv.org/abs/2403.09471) |
 | **RAG-Gesture** (Mahmoud H. Mughal et al.) | CVPR 2025 | 0.879 | 0.730 | 12.62 | [Code](https://github.com/m-hamza-mughal/RAG-Gesture) · [Paper](https://arxiv.org/abs/2412.06786) |
 | **SemTalk** (Xiangyue Zhang et al.) | ICCV 2025 | 0.428 | 0.777 | 12.91 | [Code](https://github.com/Xiangyue-Zhang/SemTalk) · [Paper](https://arxiv.org/abs/2412.16563) |
+| **GlobalDiff** (Xiangyue Zhang et al.) | AAAI 2026 | 0.478 | 0.705 | 13.73 | [Code](https://github.com/Xiangyue-Zhang/GlobalDiff) · [Paper](https://arxiv.org/abs/2511.10076) |
 | **MIBURI** (Mahmoud H. Mughal et al.) | CVPR 2026 | 0.806 | 0.790 | 17.50 | [Code](https://github.com/m-hamza-mughal/miburi) · [Paper](https://arxiv.org/abs/2603.03282) |
 | **LiveGesture** (Muhammad H. Saleem et al.) | CVPR 2026 | 0.457 | 0.794 | 13.91 | [Paper](https://arxiv.org/abs/2604.10927) |
+| **StreamTalk** (Xiangyue Zhang et al.) | ECCV 2026 | 0.383 | 0.704 | 13.18 | [Code](https://github.com/Xiangyue-Zhang/StreamTalk) · [Paper](https://arxiv.org/abs/2608.01643) |
 
 ### 2.2 Generating Body Animation from Text (HumanML3D)
 
